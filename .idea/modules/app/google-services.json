@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "88595899929",
+    "firebase_url": "https://dhts-28119.firebaseio.com",
+    "project_id": "dhts-28119",
+    "storage_bucket": "dhts-28119.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88595899929:android:a1dc010cc741f3f19bac88",
+        "android_client_info": {
+          "package_name": "com.example.dhts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88595899929-0mqkoaun4am7mgj459c8divcjqktbaoe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dhts",
+            "certificate_hash": "effa4a8bb1170fbfb7292ca22a3fb4c7c794fccb"
+          }
+        },
+        {
+          "client_id": "88595899929-pnc555dkrnhvlv3jbklc51jgqohora9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUfonauLQfSuso-jndAg0CIk4ayDOkg3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88595899929-pnc555dkrnhvlv3jbklc51jgqohora9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
