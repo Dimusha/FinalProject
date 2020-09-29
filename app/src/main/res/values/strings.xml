@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DHTS</string>
+    <string name="BUTTON1">CHEST</string>
+    <string name="BUTTON2">SHOULDERS</string>
+    <string name="TEXT1">CHEST</string>
+    <string name="BUTTON4">DUMBBELL BENCH PRESS</string>
+    <string name="TEXT2">STEP 01</string>
+    <string name="TEXT3">ADD EXERCISE</string>
+    <string name="BUTTON5">ADD</string>
+    <string name="TEXT4">UPDATE EXERCISE</string>
+    <string name="BUTTON6">UPDATE</string>
+</resources>

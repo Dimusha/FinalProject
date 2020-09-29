@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "149120385934",
+    "firebase_url": "https://exercises-ccadb.firebaseio.com",
+    "project_id": "exercises-ccadb",
+    "storage_bucket": "exercises-ccadb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149120385934:android:6d85436a1574fadcb6dadf",
+        "android_client_info": {
+          "package_name": "com.example.dhts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149120385934-4ea66189fn1kofrol8f2qti7nd3uulop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8c0EG2JpMSbbDTR_uX0Qnoz3ZOZoC6h0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149120385934-4ea66189fn1kofrol8f2qti7nd3uulop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
