@@ -5,7 +5,7 @@ public class Details {
     private String name;
     private String email;
     private String phone;
-    private String date;
+    private String nic;
 
     public Details() {
     }
@@ -34,11 +34,11 @@ public class Details {
         this.phone = phone;
     }
 
-    public String getDate() {
-        return date;
+    public String getNic() {
+        return nic;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setNic(String nic) {
+        this.nic = nic;
     }
 }

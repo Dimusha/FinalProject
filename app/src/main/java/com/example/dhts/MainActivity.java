@@ -27,15 +27,13 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText name,email,phone;
-    TextView date1;
-    DatePickerDialog.OnDateSetListener setListener;
+    EditText name,email,phone,nic;
+    //DatePickerDialog.OnDateSetListener setListener;
     ImageButton button,btn;
 
     DatabaseReference ref;
     Details details;
 
-    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
         phone = findViewById(R.id.number);
-        date1 = findViewById(R.id.date);
+        nic = findViewById(R.id.nic);
 
         details = new Details();
 
@@ -61,14 +59,14 @@ public class MainActivity extends AppCompatActivity {
                 details.setName(name.getText().toString().trim());
                 details.setEmail(email.getText().toString().trim());
                 details.setPhone(phone.getText().toString().trim());
-                details.setDate(date1.getText().toString().trim());
+                details.setNic(nic.getText().toString().trim());
 
                 ref.child("Mb").setValue(details);
 
                 String data1 = name.getText().toString().trim();
                 String data2 = email.getText().toString().trim();
                 String data3 = phone.getText().toString().trim();
-                String data4 = date1.getText().toString().trim();
+                String data4 = nic.getText().toString().trim();
 
                 Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getApplicationContext(),loginDetails.class);
@@ -76,41 +74,13 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("nm",data1);
                 i.putExtra("em",data2);
                 i.putExtra("ph",data3);
-                i.putExtra("dt",data4);
+                i.putExtra("nc",data4);
 
                 startActivity(i);
                 Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_LONG).show();
             }
         });
 
-
-
-
-        date1 = findViewById(R.id.date);
-
-        Calendar calendar = Calendar.getInstance();
-        final int year = calendar.get(Calendar.YEAR);
-        final int month = calendar.get(Calendar.MONTH);
-        final int day = calendar.get(Calendar.DAY_OF_MONTH);
-
-        date1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DatePickerDialog datePickerDialog = new DatePickerDialog(
-                        MainActivity.this,android.R.style.Theme_Holo_Light_Dialog_MinWidth,setListener,year,month,day);
-                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                datePickerDialog.show();
-            }
-        });
-
-        setListener = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
-                i1 = i1+1;
-                String date = day+" - "+i1+" - "+i;
-                date1.setText(date);
-            }
-        };
 
 
 

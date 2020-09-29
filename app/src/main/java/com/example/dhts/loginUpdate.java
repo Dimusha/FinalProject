@@ -3,55 +3,80 @@ package com.example.dhts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.Calendar;
+import java.util.HashMap;
 
 public class loginUpdate extends AppCompatActivity {
 
-    TextView date1;
-    DatePickerDialog.OnDateSetListener setListener;
+    EditText nm,em,ph,nc;
+    Button btn;
+    DatabaseReference ref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_update);
 
-        date1 = findViewById(R.id.dt);
+        nm = findViewById(R.id.name);
+        em = findViewById(R.id.email);
+        ph = findViewById(R.id.pNumber);
+        nc = findViewById(R.id.nic);
 
-        Calendar calendar = Calendar.getInstance();
-        final int year = calendar.get(Calendar.YEAR);
-        final int month = calendar.get(Calendar.MONTH);
-        final int day = calendar.get(Calendar.DAY_OF_MONTH);
+        String name = getIntent().getStringExtra("nm");
+        String email = getIntent().getStringExtra("em");
+        String phone = getIntent().getStringExtra("ph");
+        String nic = getIntent().getStringExtra("nc");
 
-        date1.setOnClickListener(new View.OnClickListener() {
+        nm.setText(name);
+        em.setText(email);
+        ph.setText(phone);
+        nc.setText(nic);
+
+        btn = findViewById(R.id.upBtn);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DatePickerDialog datePickerDialog = new DatePickerDialog(
-                        loginUpdate.this,android.R.style.Theme_Holo_Light_Dialog_MinWidth,setListener,year,month,day);
-                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                datePickerDialog.show();
+                String name = nm.getText().toString();
+                String email = em.getText().toString();
+                String contact = ph.getText().toString();
+                String nic = nc.getText().toString();
+
+                ref = FirebaseDatabase.getInstance().getReference().child("Member");
+
+                HashMap hashMap = new HashMap();
+
+                hashMap.put("name", name);
+                hashMap.put("email", email);
+                hashMap.put("phone", contact);
+                hashMap.put("nic", nic);
+
+                ref.child("Mb").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
+                    @Override
+                    public void onSuccess(Object o) {
+                        Toast.makeText(getApplicationContext(), "Successfully updated", Toast.LENGTH_LONG).show();
+                        Intent i = new Intent(getApplicationContext(), CARD_DETAILS.class);
+                        startActivity(i);
+                    }
+                });
+
+
             }
+
         });
-
-        setListener = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
-                i1 = i1+1;
-                String date = day+" - "+i1+" - "+i;
-                date1.setText(date);
-            }
-        };
-    }
-
-    public void showToast(View view) {
-        Toast toast = Toast.makeText(getApplicationContext(),"UPDATE DETAILS!",Toast.LENGTH_LONG);
-        toast.show();
     }
 }

@@ -24,8 +24,8 @@
         android:id="@+id/name"
         android:layout_width="220sp"
         android:layout_height="wrap_content"
-        android:hint="         NAME"
-        android:textSize="30sp"
+        android:hint="             NAME"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -37,8 +37,8 @@
         android:id="@+id/email"
         android:layout_width="220sp"
         android:layout_height="wrap_content"
-        android:hint="         EMAIL"
-        android:textSize="30sp"
+        android:hint="             EMAIL"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -47,30 +47,30 @@
         app:layout_constraintVertical_bias="0.382" />
 
     <TextView
-        android:id="@+id/date"
-        android:layout_width="220sp"
-        android:layout_height="wrap_content"
-        android:hint=" DATE OF BIRTH"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.512" />
-
-    <TextView
         android:id="@+id/ph"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint=" CONTACT NUMBER"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.646" />
+
+    <TextView
+        android:id="@+id/nic"
+        android:layout_width="183dp"
+        android:layout_height="31dp"
+        android:hint="      NIC"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
 
     <TextView
         android:id="@+id/textView6"
@@ -87,7 +87,7 @@
         tools:layout_editor_absoluteX="-3dp" />
 
     <ImageButton
-        android:id="@+id/ib4"
+        android:id="@+id/update"
         android:layout_width="102dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
