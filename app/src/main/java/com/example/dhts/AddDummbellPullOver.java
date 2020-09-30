@@ -55,7 +55,7 @@ public class AddDummbellPullOver extends AppCompatActivity {
                 String data2 = stp1.getText().toString();
                 String data3 = stp2.getText().toString();
 
-                Intent i3  = new Intent(getApplicationContext(),DummbbellPullOverView.class);
+                Intent i3  = new Intent(getApplicationContext(),DummbellPullOver.class);
 
                 i3.putExtra("f0", data1);
                 i3.putExtra("f1", data2);

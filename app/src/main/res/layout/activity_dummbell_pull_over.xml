@@ -98,6 +98,46 @@
                     android:inputType="textMultiLine"
                     android:text="Straighten your arms and bend them back to your chest level and repeat it back" />
 
+                <TextView
+                    android:id="@+id/eq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    tools:text="Equipment" />
+
+
+
+                <TextView
+                    android:id="@+id/eq1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/eq2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    tools:text="Step 1" />
+
+
+                <TextView
+                    android:id="@+id/st1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/eq3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    tools:text="Step 2" />
+
+
+                <TextView
+                    android:id="@+id/st2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
                 <Button
                     android:id="@+id/button10"
                     android:layout_width="match_parent"

@@ -8,24 +8,26 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class DumbbelFrontRaise extends AppCompatActivity {
+public class OneArmRow extends AppCompatActivity {
 
     Button btn;
     TextView eypment, cheststep1, cheststep2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dumbbel_front_raise);
+        setContentView(R.layout.activity_one_arm_row);
 
         btn = findViewById(R.id.button10);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),AddDoumbleFront.class);
+                Intent i = new Intent(getApplicationContext(),AddOneArmRow.class);
                 startActivity(i);
             }
         });
+
 
         eypment = findViewById(R.id.eq1);
         cheststep1 = findViewById(R.id.st1);

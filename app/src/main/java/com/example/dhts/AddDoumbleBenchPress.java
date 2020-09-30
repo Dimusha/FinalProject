@@ -54,7 +54,7 @@ public class AddDoumbleBenchPress extends AppCompatActivity {
         String data2 = stp1.getText().toString();
         String data3 = stp2.getText().toString();
 
-        Intent i3  = new Intent(getApplicationContext(),DoumbleBenchPressViewPage.class);
+        Intent i3  = new Intent(getApplicationContext(),DoumbleBenchPress.class);
 
         i3.putExtra("f0", data1);
         i3.putExtra("f1", data2);

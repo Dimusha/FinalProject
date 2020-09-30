@@ -11,7 +11,7 @@ import android.widget.EditText;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class AddHammerCurl extends AppCompatActivity {
+public class AddDummbellExtension extends AppCompatActivity {
 
     EditText stp1, stp2, equp1;
     Button btn;
@@ -29,7 +29,7 @@ public class AddHammerCurl extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_hammer_curl);
+        setContentView(R.layout.activity_add_dummbell_extension);
 
         add=new Adding1();
 
@@ -38,12 +38,11 @@ public class AddHammerCurl extends AppCompatActivity {
         stp2 = findViewById(R.id.editTextTextMultiLine3);
         btn = findViewById(R.id.button3);
 
-
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                db= FirebaseDatabase.getInstance().getReference().child("DoumbleHammerCurl");
+                db= FirebaseDatabase.getInstance().getReference().child("DoumbleExtension");
 
                 add.setEqupments(equp1.getText().toString().trim());
                 add.setSteps1(stp1.getText().toString().trim());
@@ -56,7 +55,7 @@ public class AddHammerCurl extends AppCompatActivity {
                 String data2 = stp1.getText().toString();
                 String data3 = stp2.getText().toString();
 
-                Intent i3  = new Intent(getApplicationContext(),HammerCurl.class);
+                Intent i3  = new Intent(getApplicationContext(),DumbellExtension.class);
 
                 i3.putExtra("f0", data1);
                 i3.putExtra("f1", data2);
@@ -67,5 +66,7 @@ public class AddHammerCurl extends AppCompatActivity {
 
             }
         });
+
+
     }
 }

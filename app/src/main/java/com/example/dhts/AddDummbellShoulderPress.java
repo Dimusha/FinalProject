@@ -54,7 +54,7 @@ public class AddDummbellShoulderPress extends AppCompatActivity {
                 String data2 = stp1.getText().toString();
                 String data3 = stp2.getText().toString();
 
-                Intent i3  = new Intent(getApplicationContext(),ShoulderPressView.class);
+                Intent i3  = new Intent(getApplicationContext(),DummbellShoulderPress.class);
 
                 i3.putExtra("f0", data1);
                 i3.putExtra("f1", data2);

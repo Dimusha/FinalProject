@@ -38,7 +38,7 @@ public class ArmsPage extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),DummbellPullOver.class);
+                Intent i = new Intent(getApplicationContext(),DumbellExtension.class);
                 startActivity(i);
             }
         });
