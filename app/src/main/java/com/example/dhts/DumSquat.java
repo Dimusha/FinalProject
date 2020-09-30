@@ -22,7 +22,7 @@ public class DumSquat extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),AddHammerCurl.class);
+                Intent i = new Intent(getApplicationContext(),AddDoumbleSqaut.class);
                 startActivity(i);
             }
         });

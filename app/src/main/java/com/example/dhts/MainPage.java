@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainPage extends AppCompatActivity {
 
-    Button btn1, btn2, btn3, btn4;
+    Button btn1, btn2, btn3, btn4, btn5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +51,15 @@ public class MainPage extends AppCompatActivity {
             }
         });
 
+
+        btn5 = findViewById(R.id.button7);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(),LegsPage.class);
+                startActivity(i);
+            }
+        });
 
     }
 }
