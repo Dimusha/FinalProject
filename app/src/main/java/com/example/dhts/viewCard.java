@@ -36,6 +36,8 @@ public class viewCard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_card);
 
+        final String s1=getIntent().getStringExtra("key");
+
         cName = findViewById(R.id.cName);
         cNum = findViewById(R.id.cNumber);
         month = findViewById(R.id.month);
@@ -76,6 +78,7 @@ public class viewCard extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getApplicationContext(),cardUpdate.class);
+                i.putExtra("key",s1);
 
                 i.putExtra("cName",data1);
                 i.putExtra("cNumber",data2);
@@ -95,7 +98,7 @@ public class viewCard extends AppCompatActivity {
                 dlRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        if(dataSnapshot.hasChild("Cd")){
+                        if(dataSnapshot.hasChild(s1)){
                             ref =FirebaseDatabase.getInstance().getReference().child("Card").child("Cd");
                             ref.removeValue();
                             clear();

@@ -13,6 +13,11 @@
     <string name="cardD">EXP DATE</string>
     <string name="PRO">PRO USER</string>
 
+    <string name="button1">WITHOUT EQUIPMENT</string>
+    <string name="button2">WITH EQUIPMENT</string>
+    <string name="yogaButton">YOGA EXERCISES</string>
+    <string name="premiumbtt">PREMIUM CUSTOMER</string>
+
     <string name="select_a_month">Select a Month</string>
     <string-array name="A_Spinner_items" style="italic">
         <item>Select Month</item>

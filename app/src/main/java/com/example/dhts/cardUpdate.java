@@ -29,6 +29,8 @@ public class cardUpdate extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_update);
 
+        final String s1=getIntent().getStringExtra("key");
+
         cName = findViewById(R.id.cName);
         cNum = findViewById(R.id.cNumber);
         month = findViewById(R.id.month);
@@ -67,7 +69,7 @@ public class cardUpdate extends AppCompatActivity {
                 hashMap.put("month", mo);
                 hashMap.put("year", yr);
 
-                ref.child("Cd").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
+                ref.child(s1).updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
                     @Override
                     public void onSuccess(Object o) {
                         Toast.makeText(getApplicationContext(), "Successfully updated", Toast.LENGTH_LONG).show();

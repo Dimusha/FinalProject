@@ -59,13 +59,15 @@ public class CARD_DETAILS extends AppCompatActivity {
 
                 ref = FirebaseDatabase.getInstance().getReference().child("Card");
 
+                String cardId = ref.push().getKey();
+
                 card.setcName(cName.getText().toString().trim());
                 card.setcNumber(cNum.getText().toString().trim());
                 card.setMonth(month.getSelectedItem().toString().trim());
                 card.setYear(year.getSelectedItem().toString().trim());
                 card.setCvc(cvc.getText().toString().trim());
 
-                ref.child("Cd").setValue(card);
+                ref.child(cardId).setValue(card);
 
                 String data1 = cName.getText().toString().trim();
                 String data2 = cNum.getText().toString().trim();
@@ -75,6 +77,7 @@ public class CARD_DETAILS extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getApplicationContext(),viewCard.class);
+                i.putExtra("key",cardId);
 
                 i.putExtra("cN",data1);
                 i.putExtra("cNu",data2);
