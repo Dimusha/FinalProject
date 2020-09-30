@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BentOver"></activity>
+        <activity android:name=".DumSquat"></activity>
+        <activity android:name=".LegsPage" />
+        <activity android:name=".BentOver" />
         <activity android:name=".AddBentOver" />
         <activity android:name=".AddOneArmRow" />
         <activity android:name=".OneArmRow" />
