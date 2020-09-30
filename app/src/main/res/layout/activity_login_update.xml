@@ -39,8 +39,10 @@
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="321dp"
-        android:layout_height="61dp"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:textAlignment="center"
+        android:background="@drawable/af"
         android:ems="10"
         android:hint="NAME"
         android:inputType="textPersonName"
@@ -50,12 +52,15 @@
         app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
+        app:layout_constraintVertical_bias="0.213"
+        android:gravity="center_horizontal" />
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="321dp"
-        android:layout_height="61dp"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:textAlignment="center"
+        android:background="@drawable/af"
         android:ems="10"
         android:hint="EMAIL"
         android:inputType="textPersonName"
@@ -65,14 +70,17 @@
         app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintVertical_bias="0.343"
+        android:gravity="center_horizontal" />
 
     <EditText
         android:id="@+id/nic"
-        android:layout_width="321dp"
-        android:layout_height="61dp"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:textAlignment="center"
         android:ems="10"
         android:hint="NIC"
+        android:background="@drawable/af"
         android:inputType="textPersonName"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -80,12 +88,15 @@
         app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintVertical_bias="0.477"
+        android:gravity="center_horizontal" />
 
     <EditText
         android:id="@+id/pNumber"
-        android:layout_width="321dp"
-        android:layout_height="61dp"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:textAlignment="center"
+        android:background="@drawable/af"
         android:ems="10"
         android:hint="PHONE NUMBER"
         android:inputType="number"
@@ -95,7 +106,8 @@
         app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.608" />
+        app:layout_constraintVertical_bias="0.608"
+        android:gravity="center_horizontal" />
 
     <Button
         android:id="@+id/upBtn"

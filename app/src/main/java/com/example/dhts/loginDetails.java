@@ -1,5 +1,6 @@
 package com.example.dhts;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
@@ -14,18 +15,34 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.Calendar;
 
 public class loginDetails extends AppCompatActivity {
 
     TextView name,email,phone,nic;
-    //DatePickerDialog.OnDateSetListener setListener;
-    ImageButton btn;
+    DatabaseReference ref;
+    ImageButton btn,btn1,btn2;
+
+    public void clear(){
+        name.setText("");
+        email.setText("");
+        phone.setText("");
+        nic.setText("");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_details);
+
+        final String s1=getIntent().getStringExtra("key");
+
 
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
@@ -54,6 +71,7 @@ public class loginDetails extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getApplicationContext(),loginUpdate.class);
+                i.putExtra("key",s1);
 
                 i.putExtra("nm",data1);
                 i.putExtra("em",data2);
@@ -65,28 +83,45 @@ public class loginDetails extends AppCompatActivity {
             }
         });
 
-        Calendar calendar = Calendar.getInstance();
-        final int year = calendar.get(Calendar.YEAR);
-        final int month = calendar.get(Calendar.MONTH);
-        final int day = calendar.get(Calendar.DAY_OF_MONTH);
-
-        /*dat.setOnClickListener(new View.OnClickListener() {
+        btn1= findViewById(R.id.delete);
+        btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DatePickerDialog datePickerDialog = new DatePickerDialog(
-                        loginDetails.this,android.R.style.Theme_Holo_Light_Dialog_MinWidth,setListener,year,month,day);
-                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                datePickerDialog.show();
+                DatabaseReference dlRef = FirebaseDatabase.getInstance().getReference().child("Member");
+                dlRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if(dataSnapshot.hasChild(s1)){
+                            ref =FirebaseDatabase.getInstance().getReference().child("Member").child(s1);
+                            ref.removeValue();
+                            clear();
+                            Toast.makeText(getApplicationContext(),"Deleted successfully!",Toast.LENGTH_LONG).show();
+
+
+                            Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                            startActivity(i);
+                        }
+                        else {
+                            Toast.makeText(getApplicationContext(),"No source to delete!",Toast.LENGTH_LONG).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
             }
         });
 
-        setListener = new DatePickerDialog.OnDateSetListener() {
+        btn2 = findViewById(R.id.ib3);
+        btn2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
-                i1 = i1+1;
-                String date = day+" - "+i1+" - "+i;
-                dat.setText(date);
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(),CARD_DETAILS.class);
+                startActivity(i);
             }
-        };*/
+        });
     }
 }

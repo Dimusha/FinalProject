@@ -32,6 +32,8 @@ public class loginUpdate extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_update);
 
+        final String s1=getIntent().getStringExtra("key");
+
         nm = findViewById(R.id.name);
         em = findViewById(R.id.email);
         ph = findViewById(R.id.pNumber);
@@ -65,7 +67,7 @@ public class loginUpdate extends AppCompatActivity {
                 hashMap.put("phone", contact);
                 hashMap.put("nic", nic);
 
-                ref.child("Mb").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
+                ref.child(s1).updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
                     @Override
                     public void onSuccess(Object o) {
                         Toast.makeText(getApplicationContext(), "Successfully updated", Toast.LENGTH_LONG).show();

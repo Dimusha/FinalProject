@@ -67,22 +67,25 @@ public class CARD_DETAILS extends AppCompatActivity {
 
                 ref.child("Cd").setValue(card);
 
-                Toast.makeText(getApplicationContext(),"data inserted successfully",Toast.LENGTH_SHORT).show();
-                clear();
+                String data1 = cName.getText().toString().trim();
+                String data2 = cNum.getText().toString().trim();
+                String data3 = month.getSelectedItem().toString().trim();
+                String data4 = year.getSelectedItem().toString().trim();
+                String data5 = cvc.getText().toString().trim();
 
-                Intent i = new Intent(getApplicationContext(),SpecialPlan.class);
+                Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getApplicationContext(),viewCard.class);
+
+                i.putExtra("cN",data1);
+                i.putExtra("cNu",data2);
+                i.putExtra("mo",data3);
+                i.putExtra("yr",data4);
+                i.putExtra("cc",data5);
+
                 startActivity(i);
+
             }
         });
 
-        btn = findViewById(R.id.ib4);
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),cardUpdate.class);
-                startActivity(i);
-            }
-        });
     }
 }

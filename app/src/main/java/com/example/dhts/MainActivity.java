@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
+import android.content.ClipData;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -56,12 +57,14 @@ public class MainActivity extends AppCompatActivity {
 
                 ref = FirebaseDatabase.getInstance().getReference().child("Member");
 
+                String ItemId = ref.push().getKey();
+
                 details.setName(name.getText().toString().trim());
                 details.setEmail(email.getText().toString().trim());
                 details.setPhone(phone.getText().toString().trim());
                 details.setNic(nic.getText().toString().trim());
 
-                ref.child("Mb").setValue(details);
+                ref.child(ItemId).setValue(details);
 
                 String data1 = name.getText().toString().trim();
                 String data2 = email.getText().toString().trim();
@@ -70,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(getApplicationContext(),loginDetails.class);
+                i.putExtra("key",ItemId);
+                Toast.makeText(getApplicationContext(),"key"+ItemId,Toast.LENGTH_SHORT).show();
 
                 i.putExtra("nm",data1);
                 i.putExtra("em",data2);

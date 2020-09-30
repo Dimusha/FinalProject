@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView20"
         android:layout_width="214dp"
         android:layout_height="48dp"
         android:fontFamily="sans-serif-smallcaps"
@@ -41,12 +42,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.103" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="580dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -64,31 +59,37 @@
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="32dp"
+        android:textAlignment="center"
+        android:background="@drawable/af"
         android:ems="10"
         android:hint="NAME"
         android:inputType="textPersonName"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387" />
+        app:layout_constraintVertical_bias="0.387"
+        android:gravity="center_horizontal" />
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="32dp"
+        android:background="@drawable/af"
         android:ems="10"
         android:hint="EMAIL"
+        android:textAlignment="center"
         android:inputType="textPersonName"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/name"
-        app:layout_constraintStart_toStartOf="@+id/name"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
 
 
     <ImageView
@@ -103,55 +104,68 @@
         app:layout_constraintVertical_bias="0.005"
         app:srcCompat="@drawable/yy" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
+    <EditText
+        android:id="@+id/nic"
+        android:layout_width="300dp"
+        android:layout_height="32dp"
+        android:background="@drawable/af"
+        android:hint="NIC"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603"
+        android:gravity="center_horizontal" />
 
-        <EditText
-            android:id="@+id/nic"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:inputType="textPersonName"
-            android:hint="NIC"
-            android:layout_marginLeft="49sp"
-            android:layout_marginTop="355sp"/>
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="300dp"
+        android:layout_height="32dp"
+        android:background="@drawable/af"
+        android:hint="PHONE NUMBER"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704"
+        android:gravity="center_horizontal" />
 
-        <EditText
-            android:id="@+id/number"
-            android:layout_width="281dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="47sp"
-            android:layout_marginTop="31sp"
-            android:hint="PHONE NUMBER"
-            android:inputType="textPersonName"
-            android:textSize="20sp" />
+    <ImageButton
+        android:id="@+id/ib1"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859"
+        app:srcCompat="@drawable/ic_action_name"
+        tools:ignore="VectorDrawableCompat" />
 
-        <ImageButton
-            android:id="@+id/ib1"
-            android:layout_width="102dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="151sp"
-            android:layout_marginTop="-3sp"
-            android:background="#FFFFFF"
-            app:srcCompat="@drawable/ic_action_name"
-            tools:ignore="VectorDrawableCompat" />
-
-
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="444dp"
-            android:layout_height="59dp"
-            android:background="#4C4848"
-            android:text="       ALL RIGHTS RESERVED @2020"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp" />
-
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="444dp"
+        android:layout_height="46dp"
+        android:background="#4C4848"
+        android:text="       ALL RIGHTS RESERVED @2020"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
