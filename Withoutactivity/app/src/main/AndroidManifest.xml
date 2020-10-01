@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".updateshouldertaps"></activity>
+        <activity android:name=".addingflutterkicks"></activity>
+        <activity android:name=".updatecrunches" />
+        <activity android:name=".addingcrunch" />
+        <activity android:name=".updatebicycle" />
+        <activity android:name=".addindbicycle" />
+        <activity android:name=".updateshouldertaps" />
         <activity android:name=".addingshouldertaps" />
         <activity android:name=".updatetricepdips" />
         <activity android:name=".addingtricepdips" />
