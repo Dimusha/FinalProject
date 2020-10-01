@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".updatecrabwalk"></activity>
+        <activity android:name=".updatedecpush"></activity>
+        <activity android:name=".addingdecpush" />
+        <activity android:name=".updateinclinepush" />
+        <activity android:name=".addinclinepush" />
+        <activity android:name=".updateregpush" />
+        <activity android:name=".addregpush" />
+        <activity android:name=".updatepikepushup" />
+        <activity android:name=".addpikepushupi" />
+        <activity android:name=".updatecrabwalk" />
         <activity android:name=".addcrabActivity" />
         <activity android:name=".UpdatePlanktodown" />
         <activity android:name=".crunches" />

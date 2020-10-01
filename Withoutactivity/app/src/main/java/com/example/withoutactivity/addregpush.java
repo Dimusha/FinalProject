@@ -13,22 +13,17 @@ import android.widget.ImageView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class addcrabActivity extends AppCompatActivity {
-
-
-
-
+public class addregpush extends AppCompatActivity {
     Button addingbut;
     DatabaseReference db;
 
     Adding add;
     EditText additional1,additional2,additional3;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_addingplankto);
+        setContentView(R.layout.activity_addregpush);
 
         add = new Adding();
 
@@ -47,7 +42,7 @@ public class addcrabActivity extends AppCompatActivity {
                 add.setAddi3(additional3.getText().toString().trim());
 
 
-                db= FirebaseDatabase.getInstance().getReference().child("crabwalk");
+                db= FirebaseDatabase.getInstance().getReference().child("regularpushups");
 
 
                 db.child("Additional info").setValue(add);
@@ -63,7 +58,7 @@ public class addcrabActivity extends AppCompatActivity {
 
 
 
-                Intent i3  = new Intent(getApplicationContext(),CrabWalk.class);
+                Intent i3  = new Intent(getApplicationContext(),regularpushup.class);
 
                 i3.putExtra("f0", data1);
                 i3.putExtra("f1",data2);
@@ -79,6 +74,4 @@ public class addcrabActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }
