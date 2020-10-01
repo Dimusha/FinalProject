@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".updatedecpush"></activity>
+        <activity android:name=".updateshouldertaps"></activity>
+        <activity android:name=".addingshouldertaps" />
+        <activity android:name=".updatetricepdips" />
+        <activity android:name=".addingtricepdips" />
+        <activity android:name=".updatewallpush" />
+        <activity android:name=".addingwallpush" />
+        <activity android:name=".updatedecpush" />
         <activity android:name=".addingdecpush" />
         <activity android:name=".updateinclinepush" />
         <activity android:name=".addinclinepush" />
