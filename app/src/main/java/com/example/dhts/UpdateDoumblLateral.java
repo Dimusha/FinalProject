@@ -56,10 +56,9 @@ public class UpdateDoumblLateral extends AppCompatActivity {
 
                 HashMap hashMap = new HashMap();
 
-                hashMap.put("equpments", equipment);
-                hashMap.put("steps1", stepp1);
-                hashMap.put("steps2", stepp2);
-
+                hashMap.put("additional1", equipment);
+                hashMap.put("additional2", stepp1);
+                hashMap.put("additional3", stepp2);
                 ref.child("item1").updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
                     @Override
                     public void onSuccess(Object o) {

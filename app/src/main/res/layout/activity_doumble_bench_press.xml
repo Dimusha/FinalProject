@@ -38,7 +38,8 @@
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="EQUIPMENT :  " />
+                    android:text="EQUIPMENT :DUMBBELL"
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textView6"
@@ -58,16 +59,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="328dp"
                     android:paddingBottom="100dp"
-                    app:srcCompat="@drawable/dumblebench" />
+                    app:srcCompat="@drawable/doumblebenchstep" />
 
                 <TextView
                     android:id="@+id/editTextTextMultiLine"
                     android:layout_width="match_parent"
-                    android:layout_height="93dp"
+                    android:layout_height="203dp"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="Get down on a bench, placing your hands upwards with two dumbbells. " />
+                    android:text="Lying on your back on a bench, hold a pair of dumbbells directly above your sternum with your arms fully extended. Pull your shoulder blades together, slightly stick out your chest, and point your palms forward."
+                    android:textSize="24sp" />
 
 
                 <TextView
@@ -87,16 +89,17 @@
                     android:id="@+id/imageView9"
                     android:layout_width="match_parent"
                     android:layout_height="282dp"
-                    app:srcCompat="@drawable/doumblebenchstep" />
+                    app:srcCompat="@drawable/dumblebench" />
 
                 <TextView
                     android:id="@+id/editTextTextMultiLine3"
                     android:layout_width="match_parent"
-                    android:layout_height="99dp"
+                    android:layout_height="133dp"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="Straighten your arms and bend them back to your chest level and repeat it back" />
+                    android:text="Slowly lower both dumbbells to the sides of your chest. Pause, then press the dumbbells back to the starting position."
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/eq"

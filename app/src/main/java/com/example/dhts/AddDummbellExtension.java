@@ -44,10 +44,9 @@ public class AddDummbellExtension extends AppCompatActivity {
 
                 db= FirebaseDatabase.getInstance().getReference().child("DoumbleExtension");
 
-                add.setEqupments(equp1.getText().toString().trim());
-                add.setSteps1(stp1.getText().toString().trim());
-                add.setSteps2(stp2.getText().toString().trim());
-
+                add.setAdditional1(equp1.getText().toString().trim());
+                add.setAdditional2(stp1.getText().toString().trim());
+                add.setAdditional3(stp2.getText().toString().trim());
                 db.child("item1").setValue(add);
 
 

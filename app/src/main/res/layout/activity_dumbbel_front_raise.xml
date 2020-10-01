@@ -21,12 +21,11 @@
                 android:orientation="vertical" >
 
 
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#2D90DF"
-                    android:text="DUMBBELL BENCH PRESS"
+                    android:text="DUMBBELL FRONT RAISE"
                     android:textAlignment="center"
                     android:textColor="#FFFEFE"
                     android:textSize="30sp" />
@@ -38,7 +37,8 @@
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="EQUIPMENT :  " />
+                    android:text="EQUIPMENT :  DOUMBBELL"
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textView6"
@@ -58,16 +58,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="328dp"
                     android:paddingBottom="100dp"
-                    app:srcCompat="@drawable/front1" />
+                    app:srcCompat="@drawable/front2" />
 
                 <TextView
                     android:id="@+id/editTextTextMultiLine"
                     android:layout_width="match_parent"
-                    android:layout_height="93dp"
+                    android:layout_height="162dp"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="Get down on a bench, placing your hands upwards with two dumbbells. " />
+                    android:text="Stand tall with your feet hip-width apart. Hold a dumbbell in each hand in front of your thighs. Your palms should face toward you."
+                    android:textSize="24sp" />
 
 
                 <TextView
@@ -87,23 +88,19 @@
                     android:id="@+id/imageView9"
                     android:layout_width="match_parent"
                     android:layout_height="282dp"
-                    app:srcCompat="@drawable/front2" />
+                    app:srcCompat="@drawable/front1" />
 
                 <TextView
                     android:id="@+id/editTextTextMultiLine3"
                     android:layout_width="match_parent"
-                    android:layout_height="99dp"
+                    android:layout_height="154dp"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="Straighten your arms and bend them back to your chest level and repeat it back" />
+                    android:text="Raise your arms up in front of you. Pause when the dumbbells reach shoulder height. Then slowly return the weights to the starting position."
+                    android:textSize="24sp" />
 
-                <TextView
-                    android:id="@+id/eq"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Equipment" />
+
 
 
 
@@ -112,12 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/eq2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Step 1" />
+
 
 
                 <TextView
@@ -125,12 +117,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/eq3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Step 2" />
 
 
                 <TextView

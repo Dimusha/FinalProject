@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gym2"
     tools:context=".BackPage">
 
     <LinearLayout
@@ -26,7 +27,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:background="#673AB7"
-                    android:text="ARMS"
+                    android:text="BACK"
                     android:textAlignment="center"
                     android:textSize="36sp"
                     android:textStyle="bold" />
@@ -51,6 +52,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="50dp"
                         android:layout_weight="1"
+                        android:background="#F6F3F3"
                         android:text="Dumbbell ONE ARM ROW"
                         android:textSize="24sp" />
 
@@ -75,6 +77,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="80dp"
                             android:layout_weight="1"
+                            android:background="#F6F3F3"
                             android:text="DUMBBELL bent over row"
                             android:textSize="24sp" />
 

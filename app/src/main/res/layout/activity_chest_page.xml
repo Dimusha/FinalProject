@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gym2"
     tools:context=".ChestPage">
 
 
@@ -52,6 +53,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginTop="50dp"
                         android:layout_weight="1"
+                        android:background="#F6F3F3"
                         android:text="@string/BUTTON4"
                         android:textSize="24sp" />
 
@@ -72,11 +74,12 @@
 
                         <Button
                             android:id="@+id/button1"
-                            android:layout_width="wrap_content"
+                            android:layout_width="226dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="DUMBBELL FLY"
                             android:layout_marginTop="80dp"
+                            android:layout_weight="1"
+                            android:background="#F6F3F3"
+                            android:text="DUMBBELL FLY"
                             android:textSize="24sp" />
 
                         <ImageView
@@ -105,7 +108,7 @@
 
                         <ImageView
                             android:id="@+id/imageView10"
-                            android:layout_width="176dp"
+                            android:layout_width="179dp"
                             android:layout_height="111dp"
                             android:layout_marginTop="80dp"
                             android:layout_weight="1"
@@ -117,6 +120,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="80dp"
                             android:layout_weight="1"
+                            android:background="#F6F3F3"
                             android:text="DUMBBELL PULL OVER"
                             android:textSize="24sp" />
 
