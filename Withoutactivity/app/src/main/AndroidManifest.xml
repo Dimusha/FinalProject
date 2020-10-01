@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.withoutactivity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".crunches"></activity>
+        <activity android:name=".flutterkicks" />
+        <activity android:name=".bicycleexercise" />
+        <activity android:name=".shouldertaps" />
+        <activity android:name=".tricepdips" />
+        <activity android:name=".wallpush" />
+        <activity android:name=".declinepushup" />
+        <activity android:name=".InclinePushup" />
+        <activity android:name=".regularpushup" />
+        <activity android:name=".pikepushup" />
+        <activity android:name=".CrabWalk" />
+        <activity android:name=".addingplankto" />
+        <activity android:name=".planktodown" />
+        <activity android:name=".abbspart" />
+        <activity android:name=".armspart" />
+        <activity android:name=".shoulderpart" />
+        <activity android:name=".chestpart" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
