@@ -14,7 +14,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 
-public class updateinclinepush extends AppCompatActivity {
+public class updateflutterkicks extends AppCompatActivity {
 
     EditText upinfo1,upinfo2,upinfo3;
     Button update;
@@ -23,7 +23,7 @@ public class updateinclinepush extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_updateinclinepush);
+        setContentView(R.layout.activity_updateflutterkicks);
 
         upinfo1 = findViewById(R.id.addi1);
         upinfo2 = findViewById(R.id.addi2);
@@ -45,7 +45,7 @@ public class updateinclinepush extends AppCompatActivity {
                 String info2 = upinfo2.getText().toString();
                 String info3 = upinfo3.getText().toString();
 
-                ref = FirebaseDatabase.getInstance().getReference().child("inclinepushups");
+                ref = FirebaseDatabase.getInstance().getReference().child("flutterkicks");
 
                 HashMap hashMap = new HashMap();
 
@@ -65,7 +65,7 @@ public class updateinclinepush extends AppCompatActivity {
                     public void onSuccess(Object o) {
 
                         Toast.makeText(getApplicationContext(), "Successfully Updated", Toast.LENGTH_LONG).show();
-                        Intent i = new Intent(getApplicationContext(), declinepushup.class);
+                        Intent i = new Intent(getApplicationContext(), flutterkicks.class);
 
 
                         i.putExtra("f0", data1);
@@ -77,7 +77,5 @@ public class updateinclinepush extends AppCompatActivity {
                 });
             }
         });
-
-
     }
 }

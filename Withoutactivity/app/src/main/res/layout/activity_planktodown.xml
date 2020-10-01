@@ -119,7 +119,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#3E1C78"
-                    android:text="ADD EXERCISE" />
+                    android:text="ADD ADDITIONAL INFORMATION" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

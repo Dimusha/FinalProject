@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".addingflutterkicks"></activity>
+        <activity android:name=".updateflutterkicks"></activity>
+        <activity android:name=".addingflutterkicks" />
         <activity android:name=".updatecrunches" />
         <activity android:name=".addingcrunch" />
         <activity android:name=".updatebicycle" />
