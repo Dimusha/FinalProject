@@ -67,12 +67,12 @@
                     android:text="Straighten your right leg out to about a 45-degree angle to the ground while turning your upper body to the left, bringing your right elbow towards the left knee. Make sure your rib cage is moving and not just your elbows.Now switch sides and do the same motion on the other side to complete one rep." />
 
                 <TextView
-                    android:id="@+id/stepname"
+                    android:id="@+id/info1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:id="@+id/desci"
+                    android:id="@+id/info2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 

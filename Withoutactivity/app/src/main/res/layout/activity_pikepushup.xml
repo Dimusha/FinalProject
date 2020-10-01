@@ -69,12 +69,12 @@ Keep core tight and back flat and engage your glutes and hamstrings. Your whole 
 Stay there for a moment, then slowly push back up until your arms are straight and you’re in the inverted V position. Make sure you maintain control throughout the movement" />
 
                 <TextView
-                    android:id="@+id/stepname"
+                    android:id="@+id/info1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:id="@+id/desci"
+                    android:id="@+id/info2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 

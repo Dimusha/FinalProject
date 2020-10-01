@@ -67,12 +67,12 @@
                     android:text="Slowly and deliberately push off the wall until your elbows are straight, but not locked. Exhale as you push up." />
 
                 <TextView
-                    android:id="@+id/stepname"
+                    android:id="@+id/info1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:id="@+id/desci"
+                    android:id="@+id/info2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 

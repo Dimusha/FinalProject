@@ -67,12 +67,12 @@
                     android:text="Exhale and lift your upper body, keeping your head and neck relaxed.Inhale and return to the starting position." />
 
                 <TextView
-                    android:id="@+id/stepname"
+                    android:id="@+id/info1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:id="@+id/desci"
+                    android:id="@+id/info2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 

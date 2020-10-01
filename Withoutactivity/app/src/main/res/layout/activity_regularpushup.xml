@@ -67,12 +67,12 @@
                     android:text="Lower your body until your chest nearly touches the floor.Pause, then push yourself back up.Repeat." />
 
                 <TextView
-                    android:id="@+id/stepname"
+                    android:id="@+id/info1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:id="@+id/desci"
+                    android:id="@+id/info2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 

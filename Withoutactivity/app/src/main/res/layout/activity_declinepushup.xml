@@ -67,12 +67,12 @@
                     android:text="Push into the floor to return to starting position, extending your elbows.Complete 2 to 4 sets of 8 to 20 repetitions." />
 
                 <TextView
-                    android:id="@+id/stepname"
+                    android:id="@+id/info1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:id="@+id/desci"
+                    android:id="@+id/info2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 

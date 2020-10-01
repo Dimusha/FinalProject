@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class addingplankto extends AppCompatActivity {
+public class addcrabActivity extends AppCompatActivity {
 
     private static final int PICK_IMAGE_REQUEST = 1;
 
@@ -47,7 +47,7 @@ public class addingplankto extends AppCompatActivity {
                 add.setAddi3(additional3.getText().toString().trim());
 
 
-                db= FirebaseDatabase.getInstance().getReference().child("planktodown");
+                db= FirebaseDatabase.getInstance().getReference().child("crabwalk");
 
 
                 db.child("Additional info").setValue(add);
@@ -63,7 +63,7 @@ public class addingplankto extends AppCompatActivity {
 
 
 
-                Intent i3  = new Intent(getApplicationContext(),planktodown.class);
+                Intent i3  = new Intent(getApplicationContext(),CrabWalk.class);
 
                 i3.putExtra("f0", data1);
                 i3.putExtra("f1",data2);

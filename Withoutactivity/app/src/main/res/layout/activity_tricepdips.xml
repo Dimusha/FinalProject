@@ -67,12 +67,12 @@
                     android:text="Begin by lowering for two seconds or as low as you can go without great discomfort in your shoulders. Pause in the low position for a second or two." />
 
                 <TextView
-                    android:id="@+id/stepname"
+                    android:id="@+id/info1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:id="@+id/desci"
+                    android:id="@+id/info2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".crunches"></activity>
+        <activity android:name=".updatecrabwalk"></activity>
+        <activity android:name=".addcrabActivity" />
+        <activity android:name=".UpdatePlanktodown" />
+        <activity android:name=".crunches" />
         <activity android:name=".flutterkicks" />
         <activity android:name=".bicycleexercise" />
         <activity android:name=".shouldertaps" />

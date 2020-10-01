@@ -1,23 +1,29 @@
 package com.example.withoutactivity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class planktodown extends AppCompatActivity {
 
-    Button e1;
-    TextView vstep,vdesc;
-    ImageView addedimage;
+    Button e1,upplank,delbut;
+    TextView adin1,adin2,adin3;
+
+
+    DatabaseReference ref;
 
 
     @Override
@@ -25,11 +31,14 @@ public class planktodown extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planktodown);
 
-        addedimage=findViewById(R.id.addedplank);
+
+        upplank = findViewById(R.id.updateplanktodown);
+        delbut = findViewById(R.id.deleteplanktodown);
 
         e1 = findViewById(R.id.addingb);
-        vstep =findViewById(R.id.stepname);
-        vdesc =findViewById(R.id.desci);
+        adin1 =findViewById(R.id.info1);
+        adin2 =findViewById(R.id.info2);
+        adin3 =findViewById(R.id.info3);
 
 
         e1.setOnClickListener(new View.OnClickListener() {
@@ -44,14 +53,73 @@ public class planktodown extends AppCompatActivity {
 
 
 
+        String i1 = getIntent().getStringExtra("f0");
+        String i2 = getIntent().getStringExtra("f1");
+        String i3 = getIntent().getStringExtra("f2");
 
-        String vestep = getIntent().getStringExtra("f0");
-        String vedesc = getIntent().getStringExtra("f1");
+
+
+        adin1.setText(i1);
+        adin2.setText(i2);
+        adin3.setText(i3);
+
+        upplank.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String data = adin1.getText().toString();
+                String data2 = adin2.getText().toString();
+                String data3 = adin3.getText().toString();
+
+                Intent i4 = new Intent(getApplicationContext(),UpdatePlanktodown.class);
+
+                i4.putExtra("f0", data);
+                i4.putExtra("f1", data2);
+                i4.putExtra("f2", data3);
+
+                startActivity(i4);
+            }
+        });
+
+        delbut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DatabaseReference db = FirebaseDatabase.getInstance().getReference().child("planktodown");
+                db.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if(dataSnapshot.hasChild("Additional info")){
+                            ref =  FirebaseDatabase.getInstance().getReference().child("planktodown").child("Additional info");
+                            ref.removeValue();
+                            Toast.makeText(getApplicationContext(),"Data deleted successfully",Toast.LENGTH_LONG).show();
+
+                        }
+                        else{
+                            Toast.makeText(getApplicationContext(),"No source to delete",Toast.LENGTH_LONG).show();
+
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+
+
+                });
+                Intent it = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(it);
+
+
+            }
+        });
 
 
 
-        vstep.setText(vestep);
-        vdesc.setText(vedesc);
+
+
+
+
+
 
 
     }

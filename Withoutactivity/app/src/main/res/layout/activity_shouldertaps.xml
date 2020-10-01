@@ -67,12 +67,12 @@
                     android:text="Now, with control, while keeping your hips and shoulders level and squared in front of you, lift one palm to the top of your opposite arm and pause for one second before returning to start.Repeat on the other side. That's one rep." />
 
                 <TextView
-                    android:id="@+id/stepname"
+                    android:id="@+id/info1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
                 <TextView
-                    android:id="@+id/desci"
+                    android:id="@+id/info2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
