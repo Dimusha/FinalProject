@@ -107,6 +107,12 @@
 
             </LinearLayout>
         </ScrollView>
+
+        <ImageView
+            android:id="@+id/addedplank"
+            android:layout_width="match_parent"
+            android:layout_height="237dp"
+            app:srcCompat="@drawable/greycolour" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

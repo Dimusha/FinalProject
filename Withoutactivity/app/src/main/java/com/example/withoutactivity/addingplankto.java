@@ -18,12 +18,12 @@ public class addingplankto extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUEST = 1;
 
 
-    Button addingbut,addingim;
+    Button addingbut;
     DatabaseReference db;
-    ImageView addimage;
+
     Adding add;
     EditText stepname,desc;
-    private Uri mImageUri;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +32,7 @@ public class addingplankto extends AppCompatActivity {
 
         add = new Adding();
 
-        addimage = findViewById(R.id.choseim);
-        addingim = findViewById(R.id.addingimage);
+
         addingbut = findViewById(R.id.adb);
         stepname = findViewById(R.id.plankstep);
         desc = findViewById(R.id.descio);
@@ -47,11 +46,16 @@ public class addingplankto extends AppCompatActivity {
                 db= FirebaseDatabase.getInstance().getReference().child("planktodown");
 
 
-                db.push().setValue(add);
+                db.child("Additional info").setValue(add);
+
+
 
 
                 String data1 = stepname.getText().toString();
                 String data2 = desc.getText().toString();
+
+
+
 
 
                 Intent i3  = new Intent(getApplicationContext(),planktodown.class);
@@ -59,32 +63,15 @@ public class addingplankto extends AppCompatActivity {
                 i3.putExtra("f0", data1);
                 i3.putExtra("f1",data2);
 
+
+
                 startActivity(i3);
 
-            }
-        });
 
-        addingim.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFileChooser();
 
             }
         });
     }
-    private void openFileChooser() {
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(intent, PICK_IMAGE_REQUEST);
-    }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK
-                && data != null && data.getData() != null) {
-            mImageUri = data.getData();
-            addimage.setImageURI(mImageUri);
-        }
-    }
+
+
 }

@@ -7,32 +7,44 @@
     tools:context=".addingplankto">
 
     <EditText
-        android:id="@+id/plankstep"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/descio2"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="ADD ADITIONAL INFORMATION #2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.565" />
+        app:layout_constraintVertical_bias="0.626" />
+
+    <EditText
+        android:id="@+id/plankstep"
+        android:layout_width="319dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ADD ADITIONAL INFORMATION #1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328" />
 
     <EditText
         android:id="@+id/descio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="319dp"
+        android:layout_height="54dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="ADD ADITIONAL INFORMATION #2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.689" />
+        app:layout_constraintVertical_bias="0.456" />
 
     <Button
         android:id="@+id/adb"
@@ -41,32 +53,21 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857" />
+        app:layout_constraintVertical_bias="0.89" />
 
     <ImageView
-        android:id="@+id/choseim"
-        android:layout_width="288dp"
-        android:layout_height="216dp"
+        android:id="@+id/imageView4"
+        android:layout_width="313dp"
+        android:layout_height="137dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054"
-        app:srcCompat="@drawable/abs" />
+        app:layout_constraintVertical_bias="0.075"
+        app:srcCompat="@drawable/dhts" />
 
-    <Button
-        android:id="@+id/addingimage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="add an image"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452" />
 </androidx.constraintlayout.widget.ConstraintLayout>
