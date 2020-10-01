@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DumSquat">
+    tools:context=".DumSumo">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,7 +58,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="328dp"
                     android:paddingBottom="100dp"
-                    app:srcCompat="@drawable/dummm1" />
+                    app:srcCompat="@drawable/sumo1" />
 
                 <TextView
                     android:id="@+id/editTextTextMultiLine"
@@ -87,7 +87,7 @@
                     android:id="@+id/imageView9"
                     android:layout_width="match_parent"
                     android:layout_height="282dp"
-                    app:srcCompat="@drawable/dummm2" />
+                    app:srcCompat="@drawable/sumo2" />
 
                 <TextView
                     android:id="@+id/editTextTextMultiLine3"
@@ -163,6 +163,7 @@
                         android:layout_height="wrap_content"
                         android:text="Delete" />
                 </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
 

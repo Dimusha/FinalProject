@@ -102,22 +102,7 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <ImageView
-                            android:id="@+id/imageView10"
-                            android:layout_width="176dp"
-                            android:layout_marginTop="80dp"
-                            android:layout_height="111dp"
-                            android:layout_weight="1"
-                            app:srcCompat="@drawable/dumbbellfront1" />
 
-                        <Button
-                            android:id="@+id/button3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="80dp"
-                            android:layout_weight="1"
-                            android:text="DUMBBELL FRONT RAISE"
-                            android:textSize="24sp" />
 
                     </LinearLayout>
 
@@ -132,7 +117,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="51dp"
                             android:background="#1B1A1A"
-                            android:layout_marginTop="100dp"
+                            android:layout_marginTop="300dp"
                             android:text="ALL RIGHTS RESERVED @2020"
                             android:textAlignment="center"
                             android:textColor="#FAF6F6"
