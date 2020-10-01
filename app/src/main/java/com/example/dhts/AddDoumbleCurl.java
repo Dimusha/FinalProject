@@ -49,7 +49,7 @@ public class AddDoumbleCurl extends AppCompatActivity {
                 add.setSteps1(stp1.getText().toString().trim());
                 add.setSteps2(stp2.getText().toString().trim());
 
-                db.push().setValue(add);
+                db.child("item1").setValue(add);
 
 
                 String data1 = equp1.getText().toString();

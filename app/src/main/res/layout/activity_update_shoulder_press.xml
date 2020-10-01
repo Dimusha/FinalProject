@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UpdateItemPage">
+    tools:context=".UpdateShoulderPress">
+
 
     <EditText
         android:id="@+id/editTextTextMultiLine3"
@@ -36,16 +37,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="UPDATE  STEPS" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/eq1"
         android:layout_width="353dp"
         android:layout_height="31dp"
         android:background="#40C4FF"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="UPDATE EXERCISE NAME"
+        android:hint="UPDATE EQUIPMENT NAME"
         android:inputType="textMultiLine"
         android:textColorHint="#131212"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -101,7 +103,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#18038C"
-        android:onClick="showToast"
         android:text="@string/BUTTON6"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -112,7 +113,7 @@
         app:layout_constraintVertical_bias="0.932" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/t2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="STEP 01"
@@ -125,7 +126,7 @@
         app:layout_constraintVertical_bias="0.394" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/t3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="STEP 02"
@@ -136,5 +137,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.393" />
-</androidx.constraintlayout.widget.ConstraintLayout>
 
+</androidx.constraintlayout.widget.ConstraintLayout>

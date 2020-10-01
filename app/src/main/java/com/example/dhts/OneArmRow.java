@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class OneArmRow extends AppCompatActivity {
 
-    Button btn;
+    Button btn,  updatebtn;
     TextView eypment, cheststep1, cheststep2;
 
 
@@ -40,5 +40,23 @@ public class OneArmRow extends AppCompatActivity {
         eypment.setText(eq1);
         cheststep1.setText(st1);
         cheststep2.setText(st2);
+
+        updatebtn = findViewById(R.id.button6);
+        updatebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String data = eypment.getText().toString();
+                String data2 = cheststep1.getText().toString();
+                String data3 = cheststep2.getText().toString();
+
+                Intent i3 = new Intent(getApplicationContext(),UpdateOneArmRow.class);
+
+                i3.putExtra("f0", data);
+                i3.putExtra("f1", data2);
+                i3.putExtra("f2", data3);
+
+                startActivity(i3);
+            }
+        });
     }
 }
