@@ -51,4 +51,15 @@
         <item>2030</item>
     </string-array>
 
+    <string name="select_a_number">Select a Number</string>
+    <string-array name="A_Spinner_itemsB" style="italic">
+        <item>Select Number</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
 </resources>
