@@ -101,12 +101,7 @@
                     android:text="Slowly lower both dumbbells to the sides of your chest. Pause, then press the dumbbells back to the starting position."
                     android:textSize="24sp" />
 
-                <TextView
-                    android:id="@+id/eq"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Equipment" />
+
 
 
 
@@ -115,12 +110,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/eq2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Step 1" />
+
 
 
                 <TextView
@@ -128,12 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/eq3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Step 2" />
+
 
 
                 <TextView
@@ -145,7 +130,7 @@
                     android:id="@+id/button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Add Steps"
+                    android:text="Add Additional"
                     android:textSize="24sp" />
 
                 <LinearLayout

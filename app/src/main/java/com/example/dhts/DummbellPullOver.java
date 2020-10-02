@@ -1,5 +1,6 @@
 package com.example.dhts;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -7,11 +8,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class DummbellPullOver extends AppCompatActivity {
 
-    Button btn,  updatebtn;
+    Button btn,  updatebtn, deletebtn;
     TextView eypment, cheststep1, cheststep2;
+    DatabaseReference ref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +65,36 @@ public class DummbellPullOver extends AppCompatActivity {
                 startActivity(i3);
             }
         });
+
+        deletebtn = findViewById(R.id.button61);
+        deletebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), MainPage.class);
+                startActivity(i);
+                DatabaseReference db1 = FirebaseDatabase.getInstance().getReference().child("DoumblePullOver");
+                db1.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if(dataSnapshot.hasChild("item1")){
+                            ref = FirebaseDatabase.getInstance().getReference().child("DoumblePullOver").child("item1");
+                            ref.removeValue();
+                            Toast.makeText(getApplicationContext(),"Data Deleted Successfull", Toast.LENGTH_LONG).show();
+                        }
+
+                        else
+                            Toast.makeText(getApplicationContext(),"No Source TO Delete", Toast.LENGTH_LONG).show();
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+            }
+        });
+
 
     }
 }

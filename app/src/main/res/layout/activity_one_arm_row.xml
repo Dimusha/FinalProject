@@ -68,7 +68,7 @@
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
                     android:textSize="24sp"
-                    tools:text="Downward Movement: Inhale and gently lower the dumbbell to your starting position while maintaining a flat back and retracted (pulled back) shoulder position." />
+                    tools:text="Stand with feet shoulder-width apart and hold a dumbbell in each hand. Bend the knees slightly and bend over at the waist with your back straight. Let dumbbells hand in front of the body with arms fully extended. READ MORE " />
 
 
                 <TextView
@@ -97,7 +97,7 @@
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="Exhale and slowly pull the dumbbell upwards, bending your elbow and pulling your upper arm backwards. Keep your arm close to the side of your body and continue pulling the dumbbell upwards until you are unable to lift any further without rotating your torso. Avoid rotating your body or changing the position of your spine throughout the lift."
+                    android:text="Contract your back, bend the arms, and pull both dumbbells up to your ribcage. Hold for one second in the top position, then lower the dumbbells to the starting position."
                     android:textSize="24sp" />
 
 
@@ -128,7 +128,7 @@
                     android:id="@+id/button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Add Steps"
+                    android:text="Add Additional"
                     android:textSize="24sp" />
 
                 <LinearLayout

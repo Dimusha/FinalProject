@@ -21,12 +21,11 @@
                 android:orientation="vertical" >
 
 
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#2D90DF"
-                    android:text="DUMBBELL BENCH PRESS"
+                    android:text="DUMBBELL LATTERAL"
                     android:textAlignment="center"
                     android:textColor="#FFFEFE"
                     android:textSize="30sp" />
@@ -38,7 +37,8 @@
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="EQUIPMENT :  " />
+                    android:text="EQUIPMENT :  DUMBBELL"
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textView6"
@@ -63,11 +63,12 @@
                 <TextView
                     android:id="@+id/editTextTextMultiLine"
                     android:layout_width="match_parent"
-                    android:layout_height="93dp"
+                    android:layout_height="195dp"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="Get down on a bench, placing your hands upwards with two dumbbells. " />
+                    android:text="Press heel of foot into the box and drive upward until your supporting leg becomes completely extended. Finish with your trail leg on the box or bench. Step down with the trail leg to return to starting position."
+                    android:textSize="24sp" />
 
 
                 <TextView
@@ -92,18 +93,13 @@
                 <TextView
                     android:id="@+id/editTextTextMultiLine3"
                     android:layout_width="match_parent"
-                    android:layout_height="99dp"
+                    android:layout_height="196dp"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="Straighten your arms and bend them back to your chest level and repeat it back" />
+                    android:text="Stand beside a low box or bench. Hold a dumbbell in each hand at arms length, hanging by your sides. Place one foot onto the box or step, while your other foot is firmly planted on the floor."
+                    android:textSize="24sp" />
 
-                <TextView
-                    android:id="@+id/eq"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Equipment" />
 
 
 
@@ -112,12 +108,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/eq2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Step 1" />
+
 
 
                 <TextView
@@ -125,12 +116,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/eq3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Step 2" />
+
 
 
                 <TextView
@@ -142,7 +128,7 @@
                     android:id="@+id/button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Add Steps"
+                    android:text="Add Additional"
                     android:textSize="24sp" />
 
                 <LinearLayout

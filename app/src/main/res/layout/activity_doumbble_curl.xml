@@ -129,7 +129,7 @@
                     android:id="@+id/button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Add Steps"
+                    android:text="Add Additional"
                     android:textSize="24sp" />
 
                 <LinearLayout

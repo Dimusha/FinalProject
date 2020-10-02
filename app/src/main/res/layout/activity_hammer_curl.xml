@@ -21,12 +21,11 @@
                 android:orientation="vertical" >
 
 
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#2D90DF"
-                    android:text="DUMBBELL BENCH PRESS"
+                    android:text="DUMBBELL HAMMER CURL"
                     android:textAlignment="center"
                     android:textColor="#FFFEFE"
                     android:textSize="30sp" />
@@ -38,7 +37,8 @@
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="EQUIPMENT :  " />
+                    android:text="EQUIPMENT :  DUMBBELL"
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/textView6"
@@ -63,11 +63,12 @@
                 <TextView
                     android:id="@+id/editTextTextMultiLine"
                     android:layout_width="match_parent"
-                    android:layout_height="93dp"
+                    android:layout_height="125dp"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="Get down on a bench, placing your hands upwards with two dumbbells. " />
+                    android:text="Grab a set of dumbbells with a neutral grip so your palms are facing each other and stand tall with your feet shoulder-width apart."
+                    android:textSize="24sp" />
 
 
                 <TextView
@@ -92,18 +93,14 @@
                 <TextView
                     android:id="@+id/editTextTextMultiLine3"
                     android:layout_width="match_parent"
-                    android:layout_height="99dp"
+                    android:layout_height="215dp"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="Straighten your arms and bend them back to your chest level and repeat it back" />
+                    android:text="While bracing your core, curl the dumbbells all the way up to shoulder height while keeping your palms facing each other. Pause at the top and squeeze your biceps, then lower the weights back down to the starting position."
+                    android:textSize="24sp" />
 
-                <TextView
-                    android:id="@+id/eq"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Equipment" />
+
 
 
 
@@ -112,12 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/eq2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Step 1" />
+
 
 
                 <TextView
@@ -125,12 +117,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
-                <TextView
-                    android:id="@+id/eq3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    tools:text="Step 2" />
+
 
 
                 <TextView
@@ -142,7 +129,7 @@
                     android:id="@+id/button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Add Steps"
+                    android:text="Add Additional"
                     android:textSize="24sp" />
 
                 <LinearLayout
