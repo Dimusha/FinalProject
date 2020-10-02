@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,7 +25,7 @@ import java.util.HashMap;
 public class loginUpdate extends AppCompatActivity {
 
     EditText nm,em,ph,nc;
-    Button btn;
+   ImageButton btn;
     DatabaseReference ref;
 
     @Override
@@ -49,7 +50,7 @@ public class loginUpdate extends AppCompatActivity {
         ph.setText(phone);
         nc.setText(nic);
 
-        btn = findViewById(R.id.upBtn);
+        btn = findViewById(R.id.ib3);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

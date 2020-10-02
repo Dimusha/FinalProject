@@ -13,14 +13,15 @@
         android:theme="@style/AppTheme">
         <activity android:name=".forgetPw"></activity>
         <activity android:name=".contactUs" />
-        <activity android:name=".login" />
+        <activity android:name=".login">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".aboutUs" />
         <activity android:name=".home">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".viewCard" />
         <activity android:name=".loginDetails" />

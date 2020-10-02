@@ -11,8 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="VIEW LOGIN DETAILS"
-        android:textColor="#E31D1D"
+        android:textColor="#DC1B1B"
         android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -21,68 +22,89 @@
         app:layout_constraintVertical_bias="0.079" />
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="333dp"
+        android:layout_height="309dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="sans-serif-condensed"
+        android:shadowColor="#673AB7"
+        android:textColor="#111211"
+        android:textColorHighlight="#8B129F"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.364" />
+
+    <TextView
         android:id="@+id/name"
         android:layout_width="300dp"
         android:layout_height="32dp"
-        android:textAlignment="center"
-        android:hint="NAME"
         android:background="@drawable/af"
+        android:gravity="center_horizontal"
+        android:hint="NAME"
+        android:textAlignment="center"
+        android:textColorHint="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.261"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="0.261" />
 
     <TextView
         android:id="@+id/email"
         android:layout_width="300dp"
         android:layout_height="32dp"
-        android:textAlignment="center"
-        android:hint="EMAIL"
         android:background="@drawable/af"
+        android:gravity="center_horizontal"
+        android:hint="EMAIL"
+        android:textAlignment="center"
+        android:textColorHint="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="0.356" />
 
     <TextView
         android:id="@+id/ph"
         android:layout_width="300dp"
         android:layout_height="32dp"
-        android:textAlignment="center"
         android:background="@drawable/af"
+        android:gravity="center_horizontal"
         android:hint="CONTACT NUMBER"
+        android:textAlignment="center"
+        android:textColorHint="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="0.562" />
 
     <TextView
         android:id="@+id/nic"
         android:layout_width="300dp"
         android:layout_height="32dp"
-        android:textAlignment="center"
-        android:hint="NIC"
         android:background="@drawable/af"
+        android:gravity="center_horizontal"
+        android:hint="NIC"
+        android:textAlignment="center"
+        android:textColorHint="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.512"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="0.456" />
 
     <TextView
         android:id="@+id/textView6"
@@ -105,27 +127,27 @@
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839"
-        app:srcCompat="@drawable/ic_action_name"
+        app:layout_constraintVertical_bias="0.808"
+        app:srcCompat="@drawable/don"
         tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
     <ImageButton
         android:id="@+id/update"
         android:layout_width="102dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginLeft="152dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="0.715"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839"
-        app:srcCompat="@drawable/editable"
+        app:layout_constraintVertical_bias="0.808"
+        app:srcCompat="@drawable/ed"
         tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
     <ImageButton
@@ -138,7 +160,7 @@
         app:layout_constraintHorizontal_bias="0.853"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.839"
-        app:srcCompat="@drawable/delete" />
+        app:layout_constraintVertical_bias="0.808"
+        app:srcCompat="@drawable/de" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
