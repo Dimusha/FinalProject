@@ -19,7 +19,7 @@
     <string name="premiumbtt">PREMIUM CUSTOMER</string>
 
     <string name="select_a_month">Select a Month</string>
-    <string-array name="A_Spinner_items" style="italic">
+    <string-array name="A_Spinner_items" style="italic" textColor="#FFFFFF">
         <item>Select Month</item>
         <item>1</item>
         <item>2</item>

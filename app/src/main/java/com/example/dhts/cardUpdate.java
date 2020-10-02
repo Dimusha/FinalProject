@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -21,7 +22,7 @@ public class cardUpdate extends AppCompatActivity {
 
     TextView cName,cNum,cvc;
     Spinner month,year;
-    Button button;
+    ImageButton button;
     DatabaseReference ref;
 
     @Override

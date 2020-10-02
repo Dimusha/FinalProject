@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Category extends AppCompatActivity {
 
     Button button,btn;
-    TextView bk;
+    ImageButton bt;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,8 +37,8 @@ public class Category extends AppCompatActivity {
             }
         });
 
-        bk = findViewById(R.id.back);
-        bk.setOnClickListener(new View.OnClickListener() {
+        bt = findViewById(R.id.back);
+        bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(),SpecialPlan.class);

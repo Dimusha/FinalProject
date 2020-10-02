@@ -24,20 +24,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView29"
-                    android:layout_width="500dp"
-                    android:layout_height="64dp"
-                    android:background="#E12121"
-                    android:text="  PRO USER SPECIAL PLAN"
-                    android:textSize="33sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
                     android:id="@+id/textView31"
@@ -45,9 +31,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="80dp"
                     android:layout_marginTop="26dp"
+                    android:textAlignment="center"
                     android:background="@drawable/schedule"
                     android:text="@string/proS"
-                    android:textSize="46sp" />
+                    android:fontFamily="@font/kushan"
+                    android:textSize="46sp"
+                    android:gravity="center_horizontal" />
 
                 <TextView
                     android:id="@+id/textView32"
@@ -91,7 +80,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="12dp"
+                    android:fontFamily="@font/sss"
                     android:text="DUMBBELL PRESS"
+                    android:textColor="#0B0A0A"
                     android:textSize="25sp" />
 
                 <TextView
@@ -101,6 +92,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="PUSH UPS"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -110,6 +103,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="PULL OVER"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -119,6 +114,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL FLIES"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
 
@@ -139,6 +136,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="12dp"
                     android:text="DUMBBELL SQUAT"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -148,6 +147,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL LAUNCHES"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -157,6 +158,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="STIFF DEADLIFT"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -166,6 +169,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DEAD LIFT"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -203,6 +208,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="12dp"
                     android:text="DUMBBELL SHOULDER PRESS"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -212,6 +219,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL LATTERALL"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -221,6 +230,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBELL FRONT RAISE"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -230,6 +241,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL UPRIGHT"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -250,6 +263,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="12dp"
                     android:text="DUMBBELL CURL"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -259,6 +274,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL HAMMER CURL"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -268,6 +285,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL CONCENTRATION CURL"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <TextView
@@ -277,6 +296,8 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL PRE-CURL"
+                    android:textColor="#0B0A0A"
+                    android:fontFamily="@font/sss"
                     android:textSize="25sp" />
 
                 <LinearLayout

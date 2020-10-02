@@ -11,6 +11,7 @@
         android:layout_width="393dp"
         android:layout_height="174dp"
         android:background="#F7F5F8"
+        android:fontFamily="@font/kushan"
         android:text="         WEIGHT CATEGORY 40 - 65"
         android:textColor="#E40D0D"
         android:textSize="44sp"
@@ -20,7 +21,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <Button
         android:id="@+id/btn4"
@@ -28,6 +29,8 @@
         android:layout_height="86dp"
         android:background="@drawable/updae"
         android:text="@string/cate"
+        android:fontFamily="@font/sss"
+        android:textStyle="bold"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,6 +44,8 @@
         android:layout_height="86dp"
         android:background="@drawable/updae"
         android:text="@string/cateS"
+        android:fontFamily="@font/sss"
+        android:textStyle="bold"
         android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,20 +54,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.627" />
 
-    <TextView
+    <ImageButton
         android:id="@+id/back"
-        android:layout_width="177dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/schedule"
-        android:gravity="center_horizontal"
-        android:text="BACK"
-        android:textAlignment="center"
-        android:textSize="38sp"
+        android:layout_width="106dp"
+        android:layout_height="72dp"
+        android:background="#BE7ACA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.822" />
+        app:layout_constraintVertical_bias="0.874"
+        app:srcCompat="@drawable/bc"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/textView10"
