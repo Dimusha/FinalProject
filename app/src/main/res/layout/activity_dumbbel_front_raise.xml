@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4D00BCD4"
     tools:context=".DumbbelFrontRaise">
 
     <LinearLayout
@@ -18,7 +19,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
 
                 <TextView
@@ -37,7 +38,7 @@
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
-                    android:text="EQUIPMENT :  DOUMBBELL"
+                    android:text="EQUIPMENT :  DUMBBELL"
                     android:textSize="24sp" />
 
                 <TextView
@@ -63,7 +64,10 @@
                 <TextView
                     android:id="@+id/editTextTextMultiLine"
                     android:layout_width="match_parent"
-                    android:layout_height="162dp"
+                    android:layout_height="143dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
@@ -87,21 +91,21 @@
                 <ImageView
                     android:id="@+id/imageView9"
                     android:layout_width="match_parent"
-                    android:layout_height="282dp"
+                    android:layout_height="251dp"
                     app:srcCompat="@drawable/front1" />
 
                 <TextView
                     android:id="@+id/editTextTextMultiLine3"
                     android:layout_width="match_parent"
                     android:layout_height="154dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
                     android:text="Raise your arms up in front of you. Pause when the dumbbells reach shoulder height. Then slowly return the weights to the starting position."
                     android:textSize="24sp" />
-
-
-
 
 
                 <TextView
@@ -110,13 +114,10 @@
                     android:layout_height="wrap_content" />
 
 
-
-
                 <TextView
                     android:id="@+id/st1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-
 
 
                 <TextView
@@ -128,8 +129,11 @@
                     android:id="@+id/button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circle"
                     android:text="Add Additional"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:textStyle="italic" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -141,13 +145,22 @@
                         android:id="@+id/button6"
                         android:layout_width="208dp"
                         android:layout_height="wrap_content"
-                        android:text="Update" />
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Update"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
 
                     <Button
                         android:id="@+id/button61"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Delete" />
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Delete"
+                        android:textStyle="italic" />
                 </LinearLayout>
 
             </LinearLayout>

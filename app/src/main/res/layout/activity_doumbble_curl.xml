@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4D00BCD4"
     tools:context=".DoumbbleCurl">
 
     <LinearLayout
@@ -63,7 +64,10 @@
                 <TextView
                     android:id="@+id/editTextTextMultiLine"
                     android:layout_width="match_parent"
-                    android:layout_height="177dp"
+                    android:layout_height="168dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
@@ -94,6 +98,9 @@
                     android:id="@+id/editTextTextMultiLine3"
                     android:layout_width="match_parent"
                     android:layout_height="190dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
@@ -129,8 +136,11 @@
                     android:id="@+id/button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circle"
                     android:text="Add Additional"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:textStyle="italic" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -142,13 +152,22 @@
                         android:id="@+id/button6"
                         android:layout_width="208dp"
                         android:layout_height="wrap_content"
-                        android:text="Update" />
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Update"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
 
                     <Button
                         android:id="@+id/button61"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Delete" />
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Delete"
+                        android:textStyle="italic" />
                 </LinearLayout>
 
             </LinearLayout>

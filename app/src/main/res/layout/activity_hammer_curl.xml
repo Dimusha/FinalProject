@@ -3,6 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#4D00BCD4"
+
     android:layout_height="match_parent"
     tools:context=".HammerCurl">
 
@@ -65,6 +67,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="125dp"
                     android:ems="10"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
                     android:text="Grab a set of dumbbells with a neutral grip so your palms are facing each other and stand tall with your feet shoulder-width apart."
@@ -95,6 +100,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="215dp"
                     android:ems="10"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
                     android:text="While bracing your core, curl the dumbbells all the way up to shoulder height while keeping your palms facing each other. Pause at the top and squeeze your biceps, then lower the weights back down to the starting position."
@@ -129,8 +137,11 @@
                     android:id="@+id/button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circle"
                     android:text="Add Additional"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:textStyle="italic" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -142,13 +153,22 @@
                         android:id="@+id/button6"
                         android:layout_width="208dp"
                         android:layout_height="wrap_content"
-                        android:text="Update" />
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Update"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
 
                     <Button
                         android:id="@+id/button61"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Delete" />
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Delete"
+                        android:textStyle="italic" />
                 </LinearLayout>
 
             </LinearLayout>

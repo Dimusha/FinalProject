@@ -43,16 +43,19 @@
                         android:layout_width="176dp"
                         android:layout_height="111dp"
                         android:layout_marginTop="50dp"
+                        android:layout_marginLeft="30dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/darmcurl" />
 
                     <Button
                         android:id="@+id/button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="50dp"
                         android:layout_weight="1"
-                        android:background="#F6F3F3"
+                        android:background="@drawable/circle"
                         android:text="Dumbbell Arm curl"
                         android:textSize="24sp" />
 
@@ -73,11 +76,12 @@
 
                         <Button
                             android:id="@+id/button1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
                             android:layout_marginTop="80dp"
+                            android:layout_marginLeft="30dp"
                             android:layout_weight="1"
-                            android:background="#F6F3F3"
+                            android:background="@drawable/circle"
                             android:text="DUMBBELL HAMMER CURL"
                             android:textSize="24sp" />
 
@@ -115,11 +119,12 @@
 
                         <Button
                             android:id="@+id/button3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
                             android:layout_marginTop="80dp"
+                            android:layout_marginRight="30dp"
                             android:layout_weight="1"
-                            android:background="#F6F3F3"
+                            android:background="@drawable/circle"
                             android:text="DUMBBELL EXTENSION"
                             android:textSize="24sp" />
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4D00BCD4"
     tools:context=".BentOver">
 
     <LinearLayout
@@ -18,7 +19,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
 
                 <TextView
@@ -64,6 +65,9 @@
                     android:id="@+id/editTextTextMultiLine"
                     android:layout_width="match_parent"
                     android:layout_height="202dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
@@ -93,16 +97,15 @@
                 <TextView
                     android:id="@+id/editTextTextMultiLine3"
                     android:layout_width="match_parent"
-                    android:layout_height="199dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
                     android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
                     android:text="Contract your back, bend the arms, and pull both dumbbells up to your ribcage. Hold for one second in the top position, then lower the dumbbells to the starting position."
                     android:textSize="24sp" />
-
-
-
-
 
 
                 <TextView
@@ -111,13 +114,10 @@
                     android:layout_height="wrap_content" />
 
 
-
                 <TextView
                     android:id="@+id/st1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-
-
 
 
                 <TextView
@@ -129,33 +129,44 @@
                     android:id="@+id/button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circle"
                     android:text="Add Additional"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:textStyle="italic" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-
-
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="208dp"
-                    android:layout_height="wrap_content"
-                    android:text="Update" />
-
-                <Button
-                    android:id="@+id/button61"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Delete" />
-            </LinearLayout>
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="208dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Update"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/button61"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Delete"
+                        android:textStyle="italic" />
+                </LinearLayout>
 
             </LinearLayout>
         </ScrollView>
 
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
