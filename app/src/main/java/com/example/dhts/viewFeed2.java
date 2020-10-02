@@ -16,7 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class viewFeed extends AppCompatActivity {
+public class viewFeed2 extends AppCompatActivity {
 
     TextView name,comment,number;
     DatabaseReference ref;
@@ -31,7 +31,7 @@ public class viewFeed extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_feed);
+        setContentView(R.layout.activity_view_feed2);
 
         final String s1=getIntent().getStringExtra("key");
 
@@ -53,7 +53,7 @@ public class viewFeed extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),Category.class);
+                Intent i = new Intent(getApplicationContext(),category2.class);
                 startActivity(i);
             }
         });
@@ -62,12 +62,12 @@ public class viewFeed extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DatabaseReference dlRef = FirebaseDatabase.getInstance().getReference().child("Feedback");
+                DatabaseReference dlRef = FirebaseDatabase.getInstance().getReference().child("Feedback2");
                 dlRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         if(dataSnapshot.hasChild(s1)){
-                            ref =FirebaseDatabase.getInstance().getReference().child("Feedback").child(s1);
+                            ref =FirebaseDatabase.getInstance().getReference().child("Feedback2").child(s1);
                             ref.removeValue();
                             clear();
                             Toast.makeText(getApplicationContext(),"Deleted successfully!",Toast.LENGTH_LONG).show();

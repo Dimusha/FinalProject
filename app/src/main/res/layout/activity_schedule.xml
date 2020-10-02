@@ -306,25 +306,30 @@
                     android:orientation="horizontal">
 
 
+                    <ImageButton
+                        android:id="@+id/btn1"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginTop="29dp"
+                        android:background="#FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.83"
+                        app:srcCompat="@drawable/ed"
+                        tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
-                <ImageButton
-                    android:id="@+id/btn1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFFFF"
-                    android:layout_marginLeft="83sp"
-                    android:layout_marginTop="13sp"
-                    app:srcCompat="@drawable/editable"
-                    tools:ignore="VectorDrawableCompat" />
-
-                <ImageButton
+                    <ImageButton
                     android:id="@+id/btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF"
-                    android:layout_marginLeft="57sp"
-                    android:layout_marginTop="13sp"
-                    app:srcCompat="@drawable/feedback"
+                    android:layout_marginLeft="87sp"
+                    android:layout_marginTop="28sp"
+                    app:srcCompat="@drawable/fd"
                     tools:ignore="VectorDrawableCompat" />
 
                 </LinearLayout>

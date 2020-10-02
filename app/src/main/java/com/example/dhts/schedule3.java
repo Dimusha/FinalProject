@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 public class schedule3 extends AppCompatActivity {
 
-    ImageButton btn,btn1;
+    ImageButton bt,btn1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,16 @@ public class schedule3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), updateExercise3.class);
+                startActivity(i);
+            }
+        });
+
+        bt = findViewById(R.id.btn);
+
+        bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), feedback3.class);
                 startActivity(i);
             }
         });

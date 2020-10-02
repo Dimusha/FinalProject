@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".viewFeed"></activity>
+        <activity android:name=".viewFeed3"></activity>
+        <activity android:name=".viewFeed2" />
+        <activity android:name=".feedback3" />
+        <activity android:name=".feedback2" />
+        <activity android:name=".viewFeed" />
         <activity android:name=".feedback1" />
         <activity android:name=".forgetPw" />
         <activity android:name=".contactUs" />
