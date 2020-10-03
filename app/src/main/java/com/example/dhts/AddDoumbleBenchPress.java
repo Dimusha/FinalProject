@@ -77,6 +77,8 @@ public class AddDoumbleBenchPress extends AppCompatActivity {
         startActivity(i3);
 
 
+
+
                     Toast.makeText(getApplicationContext(), "Data Insert Successfull", Toast.LENGTH_SHORT);
                     clearControls();
 
