@@ -8,6 +8,8 @@ public class AddData2 {
 
     //This is to ensure the commit to master
 
+    //This is commit 2
+
 
     public AddData2() {
 
