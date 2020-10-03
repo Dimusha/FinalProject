@@ -6,6 +6,8 @@ public class AddData2 {
     private String dateAdd;
     private String noteAdd;
 
+    //This is to ensure the commit to master
+
 
     public AddData2() {
 
