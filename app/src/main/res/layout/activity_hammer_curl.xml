@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#4D00BCD4"
+
+    android:layout_height="match_parent"
+    tools:context=".HammerCurl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2D90DF"
+                    android:text="DUMBBELL HAMMER CURL"
+                    android:textAlignment="center"
+                    android:textColor="#FFFEFE"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/editTextTextMultiLine1"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="EQUIPMENT :  DUMBBELL"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TEXT2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="328dp"
+                    android:paddingBottom="50dp"
+                    app:srcCompat="@drawable/hammer1" />
+
+                <TextView
+                    android:id="@+id/editTextTextMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="Grab a set of dumbbells with a neutral grip so your palms are facing each other and stand tall with your feet shoulder-width apart."
+                    android:textSize="24sp" />
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="STEP 02"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="282dp"
+                    android:paddingBottom="50dp"
+                    app:srcCompat="@drawable/hammer2" />
+
+                <TextView
+                    android:id="@+id/editTextTextMultiLine3"
+                    android:layout_width="match_parent"
+                    android:layout_height="223dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="While bracing your core, curl the dumbbells all the way up to shoulder height while keeping your palms facing each other. Pause at the top and squeeze your biceps, then lower the weights back down to the starting position."
+                    android:textSize="24sp" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/eq1"
+                    android:layout_width="match_parent"
+                    android:layout_height="89dp"
+                    android:textSize="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/st1"
+                    android:layout_width="match_parent"
+                    android:layout_height="89dp"
+                    android:textSize="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/st2"
+                    android:layout_width="match_parent"
+                    android:layout_height="89dp"
+                    android:textSize="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/circle"
+                    android:text="Add Additional"
+                    android:textSize="24sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="208dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Update"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/button61"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/circle"
+                        android:text="Delete"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

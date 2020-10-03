@@ -62,6 +62,7 @@
     <string name="Invalid_cvc">Please enter a valid cvc</string>
     <string name="Invalid_card">Please enter a valid card number</string>
     <string name="Invalid_comment">Please enter a comment</string>
+    <string name="Invalid_text">Please enter a text</string>
     <string-array name="A_Spinner_itemsB" style="italic">
         <item>Select Number</item>
         <item>1</item>
@@ -71,5 +72,20 @@
         <item>5</item>
         <item>6</item>
     </string-array>
+
+    <string name="BUTTON1">CHEST</string>
+    <string name="BUTTON2">SHOULDERS</string>
+    <string name="TEXT1">CHEST</string>
+    <string name="BUTTON4">DUMBBELL BENCH PRESS</string>
+    <string name="TEXT2">STEP 01</string>
+    <string name="TEXT3">ADD EXERCISE</string>
+    <string name="BUTTON5">ADD</string>
+    <string name="TEXT4">UPDATE EXERCISE</string>
+    <string name="BUTTON6">UPDATE</string>
+    <string name="invalid_data">Please Enter Data</string>
+
+    <string name="invalid_time">Please enter the correct time</string>
+    <string name="invalid_date">Please enter the correct date</string>
+    <string name="invalid_note">Please enter the correct data</string>
 
 </resources>
