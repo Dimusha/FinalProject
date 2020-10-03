@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -17,6 +21,8 @@ public class AddBentOver extends AppCompatActivity {
     Button btn;
     DatabaseReference db;
     Adding1 add;
+
+    AwesomeValidation awesomeValidation;
 
     private void clearControls(){
         stp1.setText("");
@@ -37,32 +43,48 @@ public class AddBentOver extends AppCompatActivity {
         stp2 = findViewById(R.id.editTextTextMultiLine3);
         btn = findViewById(R.id.button3);
 
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        awesomeValidation.addValidation(this,R.id.editTextTextMultiLine2, RegexTemplate.NOT_EMPTY,R.string.invalid_data);
+        awesomeValidation.addValidation(this,R.id.editTextTextMultiLine, RegexTemplate.NOT_EMPTY,R.string.invalid_data);
+        awesomeValidation.addValidation(this,R.id.editTextTextMultiLine3, RegexTemplate.NOT_EMPTY,R.string.invalid_data);
+
+
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                db= FirebaseDatabase.getInstance().getReference().child("BentOverRow");
+                if(awesomeValidation.validate()) {
 
-                add.setAdditional1(equp1.getText().toString().trim());
-                add.setAdditional2(stp1.getText().toString().trim());
-                add.setAdditional3(stp2.getText().toString().trim());
+                    db = FirebaseDatabase.getInstance().getReference().child("BentOverRow");
 
-                db.child("item1").setValue(add);
+                    add.setAdditional1(equp1.getText().toString().trim());
+                    add.setAdditional2(stp1.getText().toString().trim());
+                    add.setAdditional3(stp2.getText().toString().trim());
 
-
-                String data1 = equp1.getText().toString();
-                String data2 = stp1.getText().toString();
-                String data3 = stp2.getText().toString();
-
-                Intent i3  = new Intent(getApplicationContext(),BentOver.class);
-
-                i3.putExtra("f0", data1);
-                i3.putExtra("f1", data2);
-                i3.putExtra("f2", data3);
-
-                startActivity(i3);
+                    db.child("item1").setValue(add);
 
 
+                    String data1 = equp1.getText().toString();
+                    String data2 = stp1.getText().toString();
+                    String data3 = stp2.getText().toString();
+
+                    Intent i3 = new Intent(getApplicationContext(), BentOver.class);
+
+                    i3.putExtra("f0", data1);
+                    i3.putExtra("f1", data2);
+                    i3.putExtra("f2", data3);
+
+                    startActivity(i3);
+
+                    Toast.makeText(getApplicationContext(), "Data Insert Successfull", Toast.LENGTH_SHORT);
+                    clearControls();
+
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "Data Validation Failed", Toast.LENGTH_SHORT);
+                }
             }
         });
 

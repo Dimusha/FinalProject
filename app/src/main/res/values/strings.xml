@@ -9,4 +9,5 @@
     <string name="BUTTON5">ADD</string>
     <string name="TEXT4">UPDATE EXERCISE</string>
     <string name="BUTTON6">UPDATE</string>
+    <string name="invalid_data">Please Enter Data</string>
 </resources>

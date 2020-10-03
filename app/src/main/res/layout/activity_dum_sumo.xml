@@ -58,17 +58,17 @@
                     android:id="@+id/imageView4"
                     android:layout_width="match_parent"
                     android:layout_height="328dp"
-                    android:paddingBottom="100dp"
+                    android:paddingBottom="50dp"
                     app:srcCompat="@drawable/sumo1" />
 
                 <TextView
                     android:id="@+id/editTextTextMultiLine"
                     android:layout_width="match_parent"
-                    android:layout_height="148dp"
-                    android:ems="10"
-                    android:background="#FFFFFF"
+                    android:layout_height="168dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
                     android:text="Stand with feet wider than shoulder-width apart and your toes slightly turned out. Hold a dumbbell in each hand in front of your hips."
@@ -92,16 +92,17 @@
                     android:id="@+id/imageView9"
                     android:layout_width="match_parent"
                     android:layout_height="282dp"
+                    android:paddingBottom="50dp"
                     app:srcCompat="@drawable/sumo2" />
 
                 <TextView
                     android:id="@+id/editTextTextMultiLine3"
                     android:layout_width="match_parent"
-                    android:layout_height="159dp"
-                    android:ems="10"
-                    android:background="#FFFFFF"
+                    android:layout_height="171dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
+                    android:background="#FFFFFF"
+                    android:ems="10"
                     android:gravity="start|top"
                     android:inputType="textMultiLine"
                     android:text="Push your hips back and squat down, keeping your chest up and knees out. Bring the weights down to the floor in between your legs. Then stand back up to starting position."
@@ -113,21 +114,29 @@
                 <TextView
                     android:id="@+id/eq1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
+                    android:layout_height="89dp"
+                    android:textSize="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"/>
 
 
                 <TextView
                     android:id="@+id/st1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
+                    android:layout_height="89dp"
+                    android:textSize="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
 
 
                 <TextView
                     android:id="@+id/st2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="89dp"
+                    android:textSize="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+
 
                 <Button
                     android:id="@+id/button10"
