@@ -10,6 +10,9 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -20,6 +23,8 @@ public class feedback2 extends AppCompatActivity {
     ImageButton btn;
     DatabaseReference ref;
     Feed feed;
+
+    AwesomeValidation awesomeValidation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,34 +37,47 @@ public class feedback2 extends AppCompatActivity {
         com = findViewById(R.id.comment);
         rate = findViewById(R.id.num);
 
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        awesomeValidation.addValidation(this,R.id.name,
+                RegexTemplate.NOT_EMPTY,R.string.Invalid_name);
+        awesomeValidation.addValidation(this,R.id.comment,
+                RegexTemplate.NOT_EMPTY,R.string.Invalid_comment);
+
         btn = findViewById(R.id.feed);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                ref = FirebaseDatabase.getInstance().getReference().child("Feedback2");
+                if(awesomeValidation.validate()) {
 
-                String FeedId = ref.push().getKey();
+                    ref = FirebaseDatabase.getInstance().getReference().child("Feedback2");
 
-                feed.setName(nm.getText().toString().trim());
-                feed.setComment(com.getText().toString().trim());
-                feed.setNumber(rate.getSelectedItem().toString().trim());
+                    String FeedId = ref.push().getKey();
 
-                ref.child(FeedId).setValue(feed);
+                    feed.setName(nm.getText().toString().trim());
+                    feed.setComment(com.getText().toString().trim());
+                    feed.setNumber(rate.getSelectedItem().toString().trim());
 
-                String data1 = nm.getText().toString().trim();
-                String data2 = com.getText().toString().trim();
-                String data3 = rate.getSelectedItem().toString().trim();
+                    ref.child(FeedId).setValue(feed);
 
-                Intent i = new Intent(getApplicationContext(),viewFeed2.class);
-                i.putExtra("key",FeedId);
-                Toast.makeText(getApplicationContext(),"key"+FeedId,Toast.LENGTH_SHORT).show();
+                    String data1 = nm.getText().toString().trim();
+                    String data2 = com.getText().toString().trim();
+                    String data3 = rate.getSelectedItem().toString().trim();
 
-                i.putExtra("nm",data1);
-                i.putExtra("cm",data2);
-                i.putExtra("rt",data3);
+                    Intent i = new Intent(getApplicationContext(), viewFeed2.class);
+                    i.putExtra("key", FeedId);
+                    Toast.makeText(getApplicationContext(), "key" + FeedId, Toast.LENGTH_SHORT).show();
 
-                startActivity(i);
+                    i.putExtra("nm", data1);
+                    i.putExtra("cm", data2);
+                    i.putExtra("rt", data3);
+
+                    startActivity(i);
+
+                }else {
+                    Toast.makeText(getApplicationContext(),"Validation Failed!",Toast.LENGTH_LONG).show();
+                }
 
             }
         });

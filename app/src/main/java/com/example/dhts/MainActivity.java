@@ -18,6 +18,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,12 +31,13 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText name,email,phone,nic;
+    EditText name,email,ph,nic;
     //DatePickerDialog.OnDateSetListener setListener;
     ImageButton button,btn;
-
     DatabaseReference ref;
     Details details;
+
+    AwesomeValidation awesomeValidation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,10 +46,21 @@ public class MainActivity extends AppCompatActivity {
 
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
-        phone = findViewById(R.id.number);
+        ph = findViewById(R.id.number);
         nic = findViewById(R.id.nic);
 
         details = new Details();
+
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        awesomeValidation.addValidation(this,R.id.name,
+                RegexTemplate.NOT_EMPTY,R.string.Invalid_name);
+        awesomeValidation.addValidation(this,R.id.email,
+                RegexTemplate.NOT_EMPTY,R.string.Invalid_email);
+        awesomeValidation.addValidation(this,R.id.nic,
+                "[0-9]{9}$",R.string.Invalid_NIC);
+        awesomeValidation.addValidation(this,R.id.ph,
+                "[0-9]{10}$",R.string.Invalid_mobile_number);
 
 
         Toast.makeText(getApplicationContext(),"Configuration successfully!",Toast.LENGTH_SHORT).show();
@@ -55,34 +70,46 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                ref = FirebaseDatabase.getInstance().getReference().child("Member");
+                if(awesomeValidation.validate()){
 
-                String ItemId = ref.push().getKey();
+                    ref = FirebaseDatabase.getInstance().getReference().child("Member");
 
-                details.setName(name.getText().toString().trim());
-                details.setEmail(email.getText().toString().trim());
-                details.setPhone(phone.getText().toString().trim());
-                details.setNic(nic.getText().toString().trim());
+                    String ItemId = ref.push().getKey();
 
-                ref.child(ItemId).setValue(details);
+                    details.setName(name.getText().toString().trim());
+                    details.setEmail(email.getText().toString().trim());
+                    details.setPhone(ph.getText().toString().trim());
+                    details.setNic(nic.getText().toString().trim());
 
-                String data1 = name.getText().toString().trim();
-                String data2 = email.getText().toString().trim();
-                String data3 = phone.getText().toString().trim();
-                String data4 = nic.getText().toString().trim();
+                    ref.child(ItemId).setValue(details);
 
-                Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(getApplicationContext(),loginDetails.class);
-                i.putExtra("key",ItemId);
-                Toast.makeText(getApplicationContext(),"key"+ItemId,Toast.LENGTH_SHORT).show();
+                    String data1 = name.getText().toString().trim();
+                    String data2 = email.getText().toString().trim();
+                    String data3 = ph.getText().toString().trim();
+                    String data4 = nic.getText().toString().trim();
 
-                i.putExtra("nm",data1);
-                i.putExtra("em",data2);
-                i.putExtra("ph",data3);
-                i.putExtra("nc",data4);
+                    Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(getApplicationContext(),loginDetails.class);
+                    i.putExtra("key",ItemId);
+                    Toast.makeText(getApplicationContext(),"key"+ItemId,Toast.LENGTH_SHORT).show();
 
-                startActivity(i);
-                Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_LONG).show();
+                    i.putExtra("nm",data1);
+                    i.putExtra("em",data2);
+                    i.putExtra("ph",data3);
+                    i.putExtra("nc",data4);
+
+                    startActivity(i);
+                    Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_LONG).show();
+
+
+                }else {
+
+                    Toast.makeText(getApplicationContext(),"Validation failed!",Toast.LENGTH_LONG).show();
+
+                }
+
+                
+
             }
         });
 

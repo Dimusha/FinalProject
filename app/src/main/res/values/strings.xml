@@ -52,6 +52,16 @@
     </string-array>
 
     <string name="select_a_number">Select a Number</string>
+    <string name="Invalid_name">Please enter a Name</string>
+    <string name="Invalid_email">Please enter a Valid Email</string>
+    <string name="Invalid_mobile">Please enter a valid phone number</string>
+    <string name="Invalid_NIC">Please enter a Valid NIC</string>
+    <string name="Invalid_mobile_number">Please enter a valid Mobile Number</string>
+    <string name="Invalid_card_name">Please enter a Card Name</string>
+    <string name="Invalid_card_number">Please enter a valid Card Number</string>
+    <string name="Invalid_cvc">Please enter a valid cvc</string>
+    <string name="Invalid_card">Please enter a valid card number</string>
+    <string name="Invalid_comment">Please enter a comment</string>
     <string-array name="A_Spinner_itemsB" style="italic">
         <item>Select Number</item>
         <item>1</item>

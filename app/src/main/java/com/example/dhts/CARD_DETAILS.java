@@ -16,6 +16,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -28,6 +31,8 @@ public class CARD_DETAILS extends AppCompatActivity {
     Spinner month,year;
     DatabaseReference ref;
     Card card;
+
+    AwesomeValidation awesomeValidation;
 
     private void clear(){
         cName.setText("");
@@ -51,41 +56,54 @@ public class CARD_DETAILS extends AppCompatActivity {
         year = findViewById(R.id.year);
         cvc = findViewById(R.id.cvc);
 
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        awesomeValidation.addValidation(this,R.id.cName,
+                RegexTemplate.NOT_EMPTY,R.string.Invalid_card_name);
+        awesomeValidation.addValidation(this,R.id.cvc,
+                "[0-9]{3}$",R.string.Invalid_cvc);
+
 
         button = findViewById(R.id.ib3);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                ref = FirebaseDatabase.getInstance().getReference().child("Card");
+                if(awesomeValidation.validate()) {
 
-                String cardId = ref.push().getKey();
 
-                card.setcName(cName.getText().toString().trim());
-                card.setcNumber(cNum.getText().toString().trim());
-                card.setMonth(month.getSelectedItem().toString().trim());
-                card.setYear(year.getSelectedItem().toString().trim());
-                card.setCvc(cvc.getText().toString().trim());
+                    ref = FirebaseDatabase.getInstance().getReference().child("Card");
 
-                ref.child(cardId).setValue(card);
+                    String cardId = ref.push().getKey();
 
-                String data1 = cName.getText().toString().trim();
-                String data2 = cNum.getText().toString().trim();
-                String data3 = month.getSelectedItem().toString().trim();
-                String data4 = year.getSelectedItem().toString().trim();
-                String data5 = cvc.getText().toString().trim();
+                    card.setcName(cName.getText().toString().trim());
+                    card.setcNumber(cNum.getText().toString().trim());
+                    card.setMonth(month.getSelectedItem().toString().trim());
+                    card.setYear(year.getSelectedItem().toString().trim());
+                    card.setCvc(cvc.getText().toString().trim());
 
-                Toast.makeText(getApplicationContext(),"Data Inserted Successfully!",Toast.LENGTH_SHORT).show();
-                Intent i = new Intent(getApplicationContext(),viewCard.class);
-                i.putExtra("key",cardId);
+                    ref.child(cardId).setValue(card);
 
-                i.putExtra("cN",data1);
-                i.putExtra("cNu",data2);
-                i.putExtra("mo",data3);
-                i.putExtra("yr",data4);
-                i.putExtra("cc",data5);
+                    String data1 = cName.getText().toString().trim();
+                    String data2 = cNum.getText().toString().trim();
+                    String data3 = month.getSelectedItem().toString().trim();
+                    String data4 = year.getSelectedItem().toString().trim();
+                    String data5 = cvc.getText().toString().trim();
 
-                startActivity(i);
+                    Toast.makeText(getApplicationContext(), "Data Inserted Successfully!", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(getApplicationContext(), viewCard.class);
+                    i.putExtra("key", cardId);
+
+                    i.putExtra("cN", data1);
+                    i.putExtra("cNu", data2);
+                    i.putExtra("mo", data3);
+                    i.putExtra("yr", data4);
+                    i.putExtra("cc", data5);
+
+                    startActivity(i);
+                }else {
+                    Toast.makeText(getApplicationContext(), "Validation Failed!", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
