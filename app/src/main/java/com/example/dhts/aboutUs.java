@@ -23,5 +23,7 @@ public class aboutUs extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        //This is a comment
     }
 }
