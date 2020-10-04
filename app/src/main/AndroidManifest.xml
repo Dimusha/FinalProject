@@ -11,7 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cresent"></activity>
+        <activity android:name=".app">
+            tivity android:name=".MainLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".cresent" />
         <activity android:name=".warrior" />
         <activity android:name=".chairpose" />
         <activity android:name=".legsUpdate" />
@@ -34,7 +42,7 @@
         <activity android:name=".addEx" />
         <activity android:name=".update" />
         <activity android:name=".NewEX" />
-        <activity android:name=".yoga"></activity>
+        <activity android:name=".yoga" />
         <activity android:name=".UpdateOneArmRow" />
         <activity android:name=".UpdateHammerCurl" />
         <activity android:name=".UpdateSumo" />
@@ -129,15 +137,13 @@
         <activity android:name=".feedback1" />
         <activity android:name=".forgetPw" />
         <activity android:name=".contactUs" />
-        <activity android:name=".login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".login" />
         <activity android:name=".aboutUs" />
         <activity android:name=".home" />
+        <activity android:name=".MainLogin">
+        </activity>
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".SignUp" />
         <activity android:name=".viewCard" />
         <activity android:name=".loginDetails" />
         <activity android:name=".updateExercise3" />

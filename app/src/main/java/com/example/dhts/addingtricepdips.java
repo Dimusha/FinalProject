@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -76,6 +77,7 @@ public class addingtricepdips extends AppCompatActivity {
 
 
                 Intent i3  = new Intent(getApplicationContext(),tricepdips.class);
+                Toast.makeText(getApplicationContext(),"Data added",Toast.LENGTH_SHORT).show();
 
                 i3.putExtra("f0", data1);
                 i3.putExtra("f1",data2);

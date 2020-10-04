@@ -70,6 +70,7 @@ public class AddDoumbleFront extends AppCompatActivity {
                 String data3 = stp2.getText().toString();
 
                 Intent i3  = new Intent(getApplicationContext(),DumbbelFrontRaise.class);
+                Toast.makeText(getApplicationContext(),"Data Added!",Toast.LENGTH_SHORT).show();
 
                 i3.putExtra("f0", data1);
                 i3.putExtra("f1", data2);
