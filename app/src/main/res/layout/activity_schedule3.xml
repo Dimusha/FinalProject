@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/q5"
     tools:context=".schedule3">
 
     <LinearLayout
@@ -26,14 +27,15 @@
 
                 <TextView
                     android:id="@+id/textView31"
-                    android:layout_width="277dp"
+                    android:layout_width="297dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="80dp"
+                    android:layout_marginLeft="60dp"
                     android:layout_marginTop="26dp"
                     android:textAlignment="center"
                     android:background="@drawable/schedule"
                     android:text="@string/proS"
-                    android:fontFamily="@font/kushan"
+                    android:fontFamily="@font/cinzel_decorative"
+                    android:textStyle="bold"
                     android:textSize="46sp"
                     android:gravity="center_horizontal" />
 
@@ -70,6 +72,8 @@
                     android:layout_marginLeft="52dp"
                     android:layout_marginTop="2dp"
                     android:text="CHEST"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/artifika"
                     android:textSize="30sp"
                     android:textStyle="bold|italic" />
 
@@ -79,9 +83,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="12dp"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:text="DUMBBELL PRESS"
-                    android:textColor="#0B0A0A"
                     android:textSize="25sp" />
 
                 <TextView
@@ -91,8 +96,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="PUSH UPS"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -102,8 +108,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="PULL OVER"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -113,8 +120,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL FLIES"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
 
@@ -125,6 +133,8 @@
                     android:layout_marginLeft="52dp"
                     android:layout_marginTop="22dp"
                     android:text="LEGS"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/artifika"
                     android:textSize="30sp"
                     android:textStyle="bold|italic" />
 
@@ -135,8 +145,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="12dp"
                     android:text="DUMBBELL SQUAT"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -146,8 +157,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL LAUNCHES"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -157,8 +169,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="STIFF DEADLIFT"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -168,8 +181,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DEAD LIFT"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -196,6 +210,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="52dp"
                     android:layout_marginTop="2dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/artifika"
                     android:text="SHOULDERS"
                     android:textSize="30sp"
                     android:textStyle="bold|italic" />
@@ -207,8 +223,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="12dp"
                     android:text="DUMBBELL SHOULDER PRESS"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -218,8 +235,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL LATTERALL"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -229,8 +247,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBELL FRONT RAISE"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -240,8 +259,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL UPRIGHT"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -250,6 +270,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="52dp"
                     android:layout_marginTop="22dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/artifika"
                     android:text="ARMS"
                     android:textSize="30sp"
                     android:textStyle="bold|italic" />
@@ -262,8 +284,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="12dp"
                     android:text="DUMBBELL CURL"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -273,8 +296,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL HAMMER CURL"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -284,8 +308,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL CONCENTRATION CURL"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <TextView
@@ -295,8 +320,9 @@
                     android:layout_marginLeft="72dp"
                     android:layout_marginTop="2dp"
                     android:text="DUMBBELL PRE-CURL"
-                    android:textColor="#0B0A0A"
-                    android:fontFamily="@font/sss"
+                    android:fontFamily="@font/david_libre"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
                     android:textSize="25sp" />
 
                 <LinearLayout
@@ -311,7 +337,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="54dp"
                         android:layout_marginTop="29dp"
-                        android:background="#FFFFFF"
+                        android:background="@drawable/af"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/guideline5"
                         app:layout_constraintHorizontal_bias="0.0"
@@ -323,9 +349,9 @@
 
                     <ImageButton
                         android:id="@+id/btn"
-                        android:layout_width="wrap_content"
+                        android:layout_width="102dp"
                         android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
+                        android:background="@drawable/af"
                         android:layout_marginLeft="87sp"
                         android:layout_marginTop="28sp"
                         app:srcCompat="@drawable/fd"

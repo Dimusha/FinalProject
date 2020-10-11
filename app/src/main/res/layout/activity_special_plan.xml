@@ -4,25 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/q6"
     tools:context=".SpecialPlan">
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="316dp"
+        android:layout_width="346dp"
         android:layout_height="143dp"
-        android:fontFamily="@font/rrr"
+        android:fontFamily="@font/david_libre"
         android:gravity="center_horizontal"
         android:text="SELECT THE WEIGHT CATEGORY"
         android:textAlignment="center"
-        android:textColor="#25379F"
-        android:textSize="33sp"
+        android:textColor="#EA1A1A"
+        android:textSize="39sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.057" />
 
     <Button
         android:id="@+id/btn3"
@@ -30,16 +31,17 @@
         android:layout_height="66dp"
         android:layout_marginTop="23dp"
         android:background="@drawable/special"
-        android:text="@string/proW"
         android:fontFamily="@font/kushan"
-        android:textColor="#FFFFFF"
+        android:text="@string/proW"
+        android:textColor="@color/cardview_dark_background"
         android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321" />
+        app:layout_constraintVertical_bias="0.275" />
 
     <Button
         android:id="@+id/btn10"
@@ -47,16 +49,17 @@
         android:layout_height="66dp"
         android:layout_marginTop="63dp"
         android:background="@drawable/special"
-        android:text="40 - 65"
-        android:textColor="#FFFFFF"
         android:fontFamily="@font/kushan"
+        android:text="40 - 65"
+        android:textColor="@color/cardview_dark_background"
         android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476" />
+        app:layout_constraintVertical_bias="0.421" />
 
     <Button
         android:id="@+id/btn11"
@@ -64,16 +67,31 @@
         android:layout_height="66dp"
         android:layout_marginTop="132dp"
         android:background="@drawable/special"
-        android:text="65 ABOVE"
-        android:textColor="#FFFFFF"
         android:fontFamily="@font/kushan"
+        android:text="65 ABOVE"
+        android:textColor="@color/cardview_dark_background"
         android:textSize="36sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.637" />
+        app:layout_constraintVertical_bias="0.575" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="86dp"
+        android:layout_height="72dp"
+        android:background="#BE7ACA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874"
+        app:srcCompat="@drawable/bc"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
 
 
     <androidx.constraintlayout.widget.Guideline

@@ -129,11 +129,17 @@
         <activity android:name=".chestpart" />
         <activity android:name=".shoulderpart" />
         <activity android:name=".withoutActivity" />
-        <activity android:name=".viewFeed3" />
-        <activity android:name=".viewFeed2" />
+        <activity android:name=".viewFeed3" >
+
+        </activity>
+        <activity android:name=".viewFeed2" >
+
+        </activity>
         <activity android:name=".feedback3" />
         <activity android:name=".feedback2" />
-        <activity android:name=".viewFeed" />
+        <activity android:name=".viewFeed">
+
+        </activity>
         <activity android:name=".feedback1" />
         <activity android:name=".forgetPw" />
         <activity android:name=".contactUs" />
@@ -144,8 +150,12 @@
         </activity>
         <activity android:name=".AdminLogin" />
         <activity android:name=".SignUp" />
-        <activity android:name=".viewCard" />
-        <activity android:name=".loginDetails" />
+        <activity android:name=".viewCard">
+
+        </activity>
+        <activity android:name=".loginDetails">
+
+        </activity>
         <activity android:name=".updateExercise3" />
         <activity android:name=".uodateExercise2" />
         <activity android:name=".UpdateMeal3" />
@@ -160,12 +170,24 @@
         <activity android:name=".Schedule" />
         <activity android:name=".UpdateMeal" />
         <activity android:name=".cardUpdate" />
-        <activity android:name=".loginUpdate" />
+        <activity android:name=".loginUpdate">
+
+        </activity>
         <activity android:name=".MealPlan" />
         <activity android:name=".Category" />
-        <activity android:name=".SpecialPlan" />
-        <activity android:name=".CARD_DETAILS" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".SpecialPlan">
+
+        </activity>
+        <activity android:name=".CARD_DETAILS">
+
+        </activity>
+        <activity android:name=".MainActivity" >
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

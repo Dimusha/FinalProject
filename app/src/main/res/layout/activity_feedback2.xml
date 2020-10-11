@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/q1"
     tools:context=".feedback2">
 
     <TextView
@@ -12,28 +13,29 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/sss"
         android:text="ADD feedback"
-        android:textColor="#D51212"
+        android:textColor="#FFFFFF"
         android:textSize="52sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.105" />
 
     <EditText
         android:id="@+id/name"
         android:layout_width="270dp"
-        android:layout_height="32dp"
+        android:layout_height="36dp"
         android:background="@drawable/af"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="NAME"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:textColor="#F6F0F0"
-        android:textColorHint="#FFFFFF"
-        android:textSize="17sp"
+        android:fontFamily="@font/artifika"
+        android:textColor="#FF070707"
+        android:textColorHint="#FF070707"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -44,7 +46,7 @@
 
     <Spinner
         android:id="@+id/num"
-        android:layout_width="118dp"
+        android:layout_width="138dp"
         android:layout_height="32dp"
         android:layout_marginEnd="144dp"
         android:layout_marginRight="144dp"
@@ -60,27 +62,28 @@
         app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="@+id/cNumber"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396" />
+        app:layout_constraintVertical_bias="0.429" />
 
     <EditText
         android:id="@+id/comment"
         android:layout_width="270dp"
-        android:layout_height="92dp"
+        android:layout_height="36dp"
         android:background="@drawable/af"
         android:ems="10"
+        android:fontFamily="@font/artifika"
         android:gravity="center_horizontal"
         android:hint="ADD COMMENT"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textSize="17sp"
+        android:textColor="#FF070707"
+        android:textColorHint="#FF070707"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.533" />
+        app:layout_constraintVertical_bias="0.556" />
 
     <ImageButton
         android:id="@+id/feed"

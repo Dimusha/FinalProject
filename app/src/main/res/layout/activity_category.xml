@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/q6"
     tools:context=".Category">
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="393dp"
         android:layout_height="174dp"
-        android:background="#F7F5F8"
         android:fontFamily="@font/kushan"
         android:text="         WEIGHT CATEGORY 30 - 40"
         android:textColor="#E40D0D"
@@ -56,7 +56,7 @@
 
     <ImageButton
         android:id="@+id/back"
-        android:layout_width="106dp"
+        android:layout_width="86dp"
         android:layout_height="72dp"
         android:background="#BE7ACA"
         app:layout_constraintBottom_toBottomOf="parent"
